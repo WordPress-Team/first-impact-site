@@ -1,0 +1,16 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of contents of the front-page
+ *
+ * Template Name: Homepage
+ *
+ * @package first-impact-site
+ */
+
+?>
+
+<?php get_header(); ?>
+
+<?php get_footer(); ?>
