@@ -626,9 +626,23 @@ textarea {
   padding: 0;
 }
 
-.site-branding {
-  width: 32px;
-  height: auto;
+.site-header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  font-size: 0.8em;
+  align-items: center;
+  background-color: #071723;
+  z-index: 1;
+  font-family: "Montserrat";
+}
+.site-header .site-branding {
+  float: left;
+  margin: 0px 15px;
+  height: 50px;
+  width: 50px;
+  z-index: 999999;
 }
 
 .main-navigation {
@@ -675,6 +689,16 @@ textarea {
   text-decoration: none;
 }
 /* Small menu. */
+.menu-toggle {
+  display: block;
+  right: 2px;
+  margin-top: -50px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
   display: flex;

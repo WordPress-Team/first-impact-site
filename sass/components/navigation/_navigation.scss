@@ -3,11 +3,26 @@
 	padding: 0;
 }
 
-.site-branding {
-	width: 32px;
-	height: auto;
-}
 
+.site-header {
+	height: 70px;
+    width: 100%;
+	display: flex;
+    position: sticky;
+    font-size: 0.8em;
+	align-items: center;
+	background-color: #071723;
+    z-index: 1;
+	font-family: 'Montserrat';
+	//border-bottom: 1px solid #40282C;
+	.site-branding{
+		float: left;
+		margin: 0px 15px;
+		height:50px;
+		width:50px;
+		z-index: 999999;
+	}
+}
 
 .main-navigation {
 	display: flex;
@@ -82,6 +97,18 @@
 }
 
 /* Small menu. */
+.menu-toggle {
+    display: block;
+    //padding: 16px 16px 18px 16px;
+    //position: absolute;
+    right: 2px;
+    margin-top: -50px;
+    background-color: transparent;
+	border: none;
+	// padding: 0.6em 0em;
+    border-radius: 0;
+	color: #fff;
+}
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: flex;
