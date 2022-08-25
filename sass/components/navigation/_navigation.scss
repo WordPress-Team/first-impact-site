@@ -1,9 +1,21 @@
-.main-navigation {
-	display: block;
-	width: 100%;
+*, html {
+	margin: 0 !important;
+	padding: 0;
+}
 
+.site-branding {
+	width: 32px;
+	height: auto;
+}
+
+
+.main-navigation {
+	display: flex;
+	width: 100%;
+	justify-content: right;
 	ul {
 		display: none;
+		float: right;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -51,14 +63,14 @@
 
 	li {
 		position: relative;
-
+		padding: 5px;
 		&:hover > a,
 		&.focus > a {
 		}
 	}
 
 	a {
-		display: block;
+		display: list-item;
 		text-decoration: none;
 	}
 
@@ -72,7 +84,8 @@
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: flex;
+	
 }
 
 @media screen and (min-width: 37.5em) {
