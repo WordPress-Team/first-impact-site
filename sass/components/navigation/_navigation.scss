@@ -99,9 +99,19 @@ html {
 		width: 32px;
 	}
 }
+
+
 .main-navigation.toggled ul {
 	display: block;
+	top: 60px;
+    position: relative;
+    background-color: black;
+    width: 100%;
+    /* padding: 0; */
+    height: 100vh;
+	margin: 0;
 }
+
 
 
 
