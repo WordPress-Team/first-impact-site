@@ -63,7 +63,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  margin: 0 !important;
 }
 
 /* Sections
@@ -375,7 +374,6 @@ template {
 
 html {
   box-sizing: border-box;
-  margin: 0 !important;
 }
 
 /*--------------------------------------------------------------
@@ -621,38 +619,31 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
-*, html {
-  margin: 0 !important;
+html {
+  margin: 0;
   padding: 0;
 }
 
 .site-header {
-  height: 70px;
+  height: 60px;
   width: 100%;
-  display: flex;
-  position: sticky;
-  font-size: 0.8em;
-  align-items: center;
   background-color: #071723;
+  position: sticky;
+  top: 0;
   z-index: 1;
-  font-family: "Montserrat";
+  padding: 10px;
 }
 .site-header .site-branding {
   float: left;
-  margin: 0px 15px;
-  height: 50px;
-  width: 50px;
-  z-index: 999999;
+  width: 32px;
 }
 
 .main-navigation {
-  display: flex;
+  display: block;
   width: 100%;
-  justify-content: right;
 }
 .main-navigation ul {
   display: none;
-  float: right;
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -682,26 +673,24 @@ textarea {
 }
 .main-navigation li {
   position: relative;
-  padding: 5px;
 }
 .main-navigation a {
-  display: list-item;
+  display: block;
   text-decoration: none;
 }
 /* Small menu. */
 .menu-toggle {
-  display: block;
-  right: 2px;
-  margin-top: -50px;
   background-color: transparent;
   border: none;
-  border-radius: 0;
-  color: #fff;
+  padding: 0.4em 0;
+  float: right;
+}
+.menu-toggle img {
+  width: 32px;
 }
 
-.menu-toggle,
 .main-navigation.toggled ul {
-  display: flex;
+  display: block;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -739,6 +728,11 @@ textarea {
 --------------------------------------------- */
 .sticky {
   display: block;
+}
+
+.post,
+.page {
+  margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {
