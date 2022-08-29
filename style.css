@@ -631,11 +631,11 @@ html {
   position: sticky;
   top: 0;
   z-index: 1;
-  padding: 10px;
 }
 .site-header .site-branding {
   float: left;
   width: 32px;
+  margin: 10px;
 }
 
 .main-navigation {
@@ -685,15 +685,16 @@ html {
   padding: 0.4em 0;
   float: right;
 }
-.menu-toggle img {
+.menu-toggle .burger-menu {
   width: 32px;
+  margin: 10px;
 }
 
 .main-navigation.toggled ul {
   display: block;
   top: 60px;
   position: relative;
-  background-color: black;
+  background-color: #071723;
   width: 100%;
   /* padding: 0; */
   height: 100vh;

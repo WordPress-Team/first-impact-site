@@ -11,13 +11,15 @@ html {
     position: sticky;
     top: 0;
     z-index: 1;
-	padding: 10px;
+	// padding: 10px;
 	.site-branding{
 		float: left;
 		//margin: 5px 15px;
 		width: 32px;
+		margin: 10px;
 	}
 }
+
 .main-navigation {
 	display: block;
 	width: 100%;
@@ -80,6 +82,7 @@ html {
 	a {
 		display: block;
 		text-decoration: none;
+
 	}
 
 	.current_page_item > a,
@@ -95,8 +98,9 @@ html {
 	border: none;
 	padding: 0.4em 0;
 	float: right;
-	img {
+	.burger-menu {
 		width: 32px;
+		margin: 10px;
 	}
 }
 
@@ -105,7 +109,7 @@ html {
 	display: block;
 	top: 60px;
     position: relative;
-    background-color: black;
+    background-color: #071723;
     width: 100%;
     /* padding: 0; */
     height: 100vh;
