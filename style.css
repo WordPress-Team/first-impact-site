@@ -678,6 +678,12 @@ html {
   padding: 0.3em 0;
   margin: 5px 0;
 }
+.main-navigation li:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  border-bottom: 3px solid #D9ED92;
+}
 .main-navigation .menu-item a {
   display: block;
   text-decoration: none;
@@ -730,6 +736,12 @@ html {
   }
   .main-navigation ul li {
     margin: 0 20px;
+  }
+
+  .menu-item-gtranslate #gtranslate_wrapper {
+    position: absolute;
+    width: 173px;
+    height: 32px;
   }
 }
 .site-main .comment-navigation,
