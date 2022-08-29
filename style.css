@@ -792,6 +792,23 @@ html {
   margin: 0 0 1.5em;
 }
 
+.info-section {
+  display: grid;
+  grid-template-rows: auto;
+  width: 100%;
+  padding: 0 5%;
+}
+.info-section .intro {
+  text-align: center;
+  margin: 0;
+}
+.info-section .intro .title {
+  font-family: "DM Serif Text", serif;
+}
+.info-section .intro .content {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -979,25 +996,6 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
-=======
-/* Error: Undefined variable.
- *   ,
- * 7 |         font-family: $dm-serif;
- *   |                      ^^^^^^^^^
- *   '
- *   sass\components\content\_info-section.scss 7:22  @import
- *   sass\components\_components.scss 8:9             @import
- *   sass\style.scss 82:9                             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-
 }
 
 /*# sourceMappingURL=style.css.map */

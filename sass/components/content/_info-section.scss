@@ -1,9 +1,16 @@
 .info-section {
     display: grid;
     grid-template-rows: auto;
-    margin: 0 5%;
-
-    .title {
-        font-family: $dm-serif;
+    width: 100%;
+    padding: 0 5%;
+    .intro {
+        text-align: center;
+        margin: 0;
+        .title {
+            font-family: $dm-serif;
+        }
+        .content {
+            font-family: $montserrat;
+        }
     }
 }
