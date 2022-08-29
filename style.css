@@ -678,13 +678,13 @@ html {
   padding: 0.3em 0;
   margin: 5px 0;
 }
-.main-navigation a {
+.main-navigation .menu-item a {
   display: block;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
 }
-.main-navigation a:hover {
+.main-navigation .menu-item a:hover {
   color: #D9ED92;
   font-weight: 600;
 }
@@ -727,7 +727,6 @@ html {
     justify-content: flex-end;
     align-items: center;
     padding-top: 8px;
-    position: sticky;
   }
   .main-navigation ul li {
     margin: 0 20px;

@@ -101,7 +101,7 @@ html {
 		
 	}
 
-	a {
+	.menu-item a {
 		display: block;
 		text-decoration: none;
 		font-family: $montserrat;
@@ -167,7 +167,7 @@ html {
 		justify-content: flex-end;
 		align-items: center;
 		padding-top: 8px;
-		position: sticky;
+		// position: sticky;
 
 		li {
 			margin: 0 20px;
