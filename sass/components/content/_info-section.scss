@@ -1,0 +1,9 @@
+.info-section {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 0 5%;
+
+    .title {
+        font-family: $dm-serif;
+    }
+}
