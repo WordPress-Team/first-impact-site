@@ -1,13 +1,28 @@
+// SITE COLORS
+$dark-blue: #071723;
+$light-blue: #184E77;
+$blue-green: #34A0A4;
+$yellow-green: #D9ED92;
+$white: #FFFFFF;
+
+// SITE TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$dm-serif: 'DM Serif Text', serif;
+$montserrat: 'Montserrat', sans-serif;
+
 html {
 	margin: 0;
 	padding: 0;
 	
 }
 
+
 .site-header{
     height: 60px;
     width: 100%;
-    background-color: #071723;
+    background-color: $dark-blue;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -19,6 +34,7 @@ html {
 		margin: 10px;
 	}
 }
+
 
 .main-navigation {
 	display: block;
@@ -49,6 +65,7 @@ html {
 				&.focus > ul {
 					display: block;
 					left: auto;
+					
 				}
 			}
 
@@ -73,16 +90,28 @@ html {
 
 	li {
 		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
+		padding: 0.3em 0;
+		margin: 5px 0;
+		// &:hover::after {
+		// 	content: "";
+		// 	width: 100%;
+		// 	position: absolute;
+		// 	border-bottom: 3px solid $yellow-green;
+		// }
+		
 	}
 
 	a {
 		display: block;
 		text-decoration: none;
-
+		font-family: $montserrat;
+		color: $white;
+		
+		&:hover {
+			color: $yellow-green;
+			font-weight: 600;
+			
+		}
 	}
 
 	.current_page_item > a,
@@ -90,6 +119,11 @@ html {
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 	}
+}
+
+// GTRANSLATE 
+.menu-item-gtranslate div {
+	position: relative !important;
 }
 
 /* Small menu. */
@@ -104,22 +138,25 @@ html {
 	}
 }
 
-
+// Toggled navigation
 .main-navigation.toggled ul {
-	display: block;
-	top: 60px;
-    position: relative;
-    background-color: #071723;
-    width: 100%;
-    /* padding: 0; */
-    height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: relative;
+	width: 100%;
+	top: -10px;
+    background-color: $dark-blue;
+    padding: 20px;
+    height: fit-content;
 	margin: 0;
+
 }
 
 
 
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 768px) {
 
 	.menu-toggle {
 		display: none;
@@ -127,6 +164,15 @@ html {
 
 	.main-navigation ul {
 		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding-top: 8px;
+		position: sticky;
+
+		li {
+			margin: 0 20px;
+			
+		}
 	}
 }
 
