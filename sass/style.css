@@ -779,6 +779,15 @@ textarea {
   color: white;
 }
 
+.hero-section h1 {
+  font-family: "DM Serif Text", serif;
+  padding-top: 40px;
+}
+
+.hero-section h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
 @media screen and (min-width: 768px) {
   .hero-section {
     background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/08/drinking-dirty-water.jpg);
@@ -802,12 +811,10 @@ textarea {
   }
   .hero-section h1 {
     font-size: 60px;
-    font-family: 'Montserrat', sans-serif;
     padding-top: 40px;
   }
   .hero-section h3 {
     font-size: 30px;
-    font-family: 'DM Serif Text', serif;
     padding-top: 50px;
   }
 }
