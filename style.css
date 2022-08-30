@@ -722,6 +722,18 @@ textarea {
   margin: 0 0 1.5em;
 }
 
+.dev-list {
+  background-color: #D9ED92;
+}
+.dev-list h3 {
+  text-align: center;
+}
+.dev-list .water-team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
