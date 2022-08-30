@@ -4,6 +4,7 @@
     width: 100%;
     padding: 0 6%;
     grid-gap: 30px;
+
     .intro {
         text-align: center;
         margin: 0;
@@ -17,9 +18,24 @@
             border-radius: 20px;
         }
 
-
         .content {
             font-family: $montserrat;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .info-section {
+        
+        .info-container {
+            display: grid;
+            gap: 30px;
+            grid-template-columns:  1fr 1fr;
+
+            .content {
+                order: -1;
+            }
         }
     }
 }

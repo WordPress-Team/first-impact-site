@@ -814,6 +814,16 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (min-width: 768px) {
+  .info-section .info-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .info-section .info-container .content {
+    order: -1;
+  }
+}
 /* Comments
 --------------------------------------------- */
 .comment-content a {
