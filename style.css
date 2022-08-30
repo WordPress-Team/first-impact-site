@@ -796,7 +796,8 @@ html {
   display: grid;
   grid-template-rows: auto;
   width: 100%;
-  padding: 0 5%;
+  padding: 0 6%;
+  grid-gap: 30px;
 }
 .info-section .intro {
   text-align: center;
@@ -804,6 +805,10 @@ html {
 }
 .info-section .intro .title {
   font-family: "DM Serif Text", serif;
+}
+.info-section .intro .info-image {
+  width: 100%;
+  border-radius: 20px;
 }
 .info-section .intro .content {
   font-family: "Montserrat", sans-serif;
