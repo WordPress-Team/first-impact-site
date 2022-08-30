@@ -4,17 +4,18 @@
   width: 100%;
   padding: 0 6%;
   grid-gap: 40px;
+  font-family: $montserrat;
 
   .intro {
     text-align: center;
-    margin: 0;
+    margin: 0 5%;
 
     .title {
       font-family: $dm-serif;
     }
 
     .info-container {
-        margin: 0 5%;
+        
 
         .info-image {
           width: 100%;
@@ -25,8 +26,7 @@
         }
 
         .content {
-            margin: 20px 0;
-            font-family: $montserrat;
+            
         }
 
         
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .info-section {
     
     .intro {
@@ -51,20 +51,14 @@
       display: grid;
       gap: 30px;
       grid-template-columns: auto auto;
-      margin: 40px;
-
-
-      .content {
-        font-size: 1.25em;
-      }
-
-      // .wrap {
-      //   column-span: 1 / span -1;
-      // }
 
       .item-right{
         order: -1;
       }
+    }
+
+    .content {
+      font-size: 1.15em;
     }
 
   }
