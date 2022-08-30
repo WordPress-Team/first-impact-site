@@ -722,6 +722,27 @@ textarea {
   margin: 0 0 1.5em;
 }
 
+.resources {
+  color: white;
+}
+.resources .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 200px;
+  height: 250px;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+.resources .card p {
+  margin: 0;
+}
+.resources .card .card-button {
+  border-radius: 20px;
+  width: fit-content;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
