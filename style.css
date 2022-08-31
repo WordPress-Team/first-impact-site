@@ -644,6 +644,7 @@ html {
   display: block;
   width: 100%;
 }
+
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -827,6 +828,7 @@ html {
   background: linear-gradient(rgba(7, 23, 35, 0), #071723);
   border-bottom: 1px solid #fff;
 }
+
 .gallery .card-content .card-title {
   position: relative;
   width: max-content;
@@ -851,6 +853,10 @@ html {
 }
 .gallery .card-content a {
   text-decoration: none;
+}
+.resources .card .card-button {
+  border-radius: 20px;
+  width: fit-content;
 }
 
 @media screen and (min-width: 40em) and (max-width: 100em) {
