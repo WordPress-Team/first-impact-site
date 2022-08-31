@@ -843,15 +843,6 @@ html {
   font-family: "DM Serif Text", serif;
 }
 
-.resources {
-  width: 100%;
-  padding: 0 6%;
-}
-.resources .resource-title {
-  text-align: center;
-  font-family: "DM Serif Text", serif;
-}
-
 .gallery {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
