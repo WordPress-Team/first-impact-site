@@ -13,4 +13,5 @@
 
 <?php get_header(); ?>
 <?php get_template_part('template-parts/dev-list'); ?>
+<?php get_template_part('template-parts/contact-section'); ?>
 <?php get_footer(); ?>
