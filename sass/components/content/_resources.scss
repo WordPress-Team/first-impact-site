@@ -82,3 +82,12 @@
   }
   
 }
+
+@media screen and (min-width: 768px){
+    .resources {
+        .resource-title {
+            text-align: left;
+            font-family: 2.25em;
+        }
+    }
+}
