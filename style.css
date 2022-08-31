@@ -621,6 +621,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+
 html {
   margin: 0;
   padding: 0;
@@ -650,6 +651,7 @@ html {
   margin: 0;
   padding-left: 0;
 }
+
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -696,8 +698,8 @@ html {
 }
 .menu-item-gtranslate div {
   position: relative !important;
-}
 
+}
 /* Small menu. */
 .menu-toggle {
   background-color: transparent;
@@ -744,6 +746,7 @@ html {
     height: 32px;
   }
 }
+
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -790,6 +793,29 @@ html {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.resources {
+  color: white;
+}
+
+.resources .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 200px;
+  height: 250px;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+.resources .card p {
+  margin: 0;
+}
+.resources .card .card-button {
+  border-radius: 20px;
+  width: fit-content;
+
 }
 
 /* Comments
@@ -979,15 +1005,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
-=======
-/* Error: Undefined variable.
- *   ,
- * 7 |         font-family: $dm-serif;
- *   |                      ^^^^^^^^^
- *   '
- *   sass\components\content\_info-section.scss 7:22  @import
- *   sass\components\_components.scss 8:9             @import
- *   sass\style.scss 82:9                             root stylesheet */
+
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
