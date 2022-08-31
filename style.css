@@ -832,6 +832,72 @@ html {
   }
   .info-section .content {
     font-size: 1.15em;
+  margin: 0 5%;
+}
+.info-section .title {
+  font-family: "DM Serif Text", serif;
+}
+
+.gallery {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-template-rows: auto;
+  grid-gap: 2rem !important;
+  justify-content: center;
+  padding: 10% 0;
+  margin: 0 auto;
+}
+.gallery .cards {
+  width: 250px;
+  height: 350px;
+  background: linear-gradient(131.37deg, #FFFFFF 2.59%, #090b34 98.05%);
+  color: #fff;
+  padding: 10rem 0 0;
+  max-width: 35ch;
+  border-radius: 10px;
+  background-size: cover !important;
+  object-position: 100% 0;
+}
+.gallery .card-content {
+  border-radius: 10px;
+  padding: 1em;
+  background: linear-gradient(rgba(7, 23, 35, 0), #071723);
+  border-bottom: 1px solid #fff;
+}
+.gallery .card-content .card-title {
+  position: relative;
+  width: max-content;
+}
+.gallery .card-content .card-title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: calc(100% + 1rem);
+  left: -1rem;
+  bottom: 0;
+  background-color: #D9ED92;
+}
+.gallery .card-content .redirect-button {
+  cursor: pointer;
+  width: max-content;
+  display: inline-block;
+  background: #fff;
+  color: #090b34;
+  border: none;
+  border-radius: 15px;
+}
+.gallery .card-content a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 40em) and (max-width: 100em) {
+  .gallery {
+    padding: 10% 15%;
+  }
+}
+@media screen and (min-width: 101em) {
+  .gallery {
+    padding: 10% 20%;
   }
 }
 /* Comments
