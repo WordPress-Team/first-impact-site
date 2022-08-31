@@ -622,6 +622,7 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 
+
 html {
   margin: 0;
   padding: 0;
@@ -645,13 +646,13 @@ html {
   display: block;
   width: 100%;
 }
+
 .main-navigation ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -746,7 +747,6 @@ html {
     height: 32px;
   }
 }
-
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -815,7 +815,6 @@ html {
 .resources .card .card-button {
   border-radius: 20px;
   width: fit-content;
-
 }
 
 /* Comments
