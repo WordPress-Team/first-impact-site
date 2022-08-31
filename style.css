@@ -60,6 +60,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -619,6 +621,25 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  height: 60px;
+  width: 100%;
+  background-color: #071723;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.site-header .site-branding {
+  float: left;
+  width: 32px;
+  margin: 10px;
+}
+
 .main-navigation {
   display: block;
   width: 100%;
@@ -654,24 +675,73 @@ textarea {
 }
 .main-navigation li {
   position: relative;
+  padding: 0.3em 0;
+  margin: 5px 0;
 }
-.main-navigation a {
+.main-navigation li:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  border-bottom: 3px solid #D9ED92;
+}
+.main-navigation .menu-item a {
   display: block;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
 }
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block;
+.main-navigation .menu-item a:hover {
+  color: #D9ED92;
+  font-weight: 600;
+}
+.menu-item-gtranslate div {
+  position: relative !important;
 }
 
-@media screen and (min-width: 37.5em) {
+/* Small menu. */
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  padding: 0.4em 0;
+  float: right;
+}
+.menu-toggle .burger-menu {
+  width: 32px;
+  margin: 10px;
+}
+
+.main-navigation.toggled ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+  top: -10px;
+  background-color: #071723;
+  padding: 20px;
+  height: fit-content;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 
   .main-navigation ul {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 8px;
+  }
+  .main-navigation ul li {
+    margin: 0 20px;
+  }
+
+  .menu-item-gtranslate #gtranslate_wrapper {
+    position: absolute;
+    width: 173px;
+    height: 32px;
   }
 }
 .site-main .comment-navigation,
@@ -722,6 +792,77 @@ textarea {
   margin: 0 0 1.5em;
 }
 
+.info-section {
+  display: grid;
+  grid-template-rows: auto;
+  margin: 0 5%;
+}
+.info-section .title {
+  font-family: "DM Serif Text", serif;
+}
+
+.gallery {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-template-rows: auto;
+  grid-gap: 2rem !important;
+  justify-content: center;
+  padding: 10% 0;
+  margin: 0 auto;
+}
+.gallery .cards {
+  width: 250px;
+  height: 350px;
+  background: linear-gradient(131.37deg, #FFFFFF 2.59%, #090b34 98.05%);
+  color: #fff;
+  padding: 10rem 0 0;
+  max-width: 35ch;
+  border-radius: 10px;
+  background-size: cover !important;
+  object-position: 100% 0;
+}
+.gallery .card-content {
+  border-radius: 10px;
+  padding: 1em;
+  background: linear-gradient(rgba(7, 23, 35, 0), #071723);
+  border-bottom: 1px solid #fff;
+}
+.gallery .card-content .card-title {
+  position: relative;
+  width: max-content;
+}
+.gallery .card-content .card-title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: calc(100% + 1rem);
+  left: -1rem;
+  bottom: 0;
+  background-color: #D9ED92;
+}
+.gallery .card-content .redirect-button {
+  cursor: pointer;
+  width: max-content;
+  display: inline-block;
+  background: #fff;
+  color: #090b34;
+  border: none;
+  border-radius: 15px;
+}
+.gallery .card-content a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 40em) and (max-width: 100em) {
+  .gallery {
+    padding: 10% 15%;
+  }
+}
+@media screen and (min-width: 101em) {
+  .gallery {
+    padding: 10% 20%;
+  }
+}
 /* Comments
 --------------------------------------------- */
 .comment-content a {
