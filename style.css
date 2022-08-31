@@ -621,8 +621,6 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
-
-
 html {
   margin: 0;
   padding: 0;
@@ -646,7 +644,6 @@ html {
   display: block;
   width: 100%;
 }
-
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -699,8 +696,8 @@ html {
 }
 .menu-item-gtranslate div {
   position: relative !important;
-
 }
+
 /* Small menu. */
 .menu-toggle {
   background-color: transparent;
@@ -795,10 +792,18 @@ html {
   margin: 0 0 1.5em;
 }
 
+.info-section {
+  display: grid;
+  grid-template-rows: auto;
+  margin: 0 5%;
+}
+.info-section .title {
+  font-family: "DM Serif Text", serif;
+}
+
 .resources {
   color: white;
 }
-
 .resources .card {
   display: flex;
   flex-direction: column;
@@ -1004,17 +1009,6 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
-
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-
 }
 
 /*# sourceMappingURL=style.css.map */
