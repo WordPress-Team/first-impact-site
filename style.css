@@ -621,6 +621,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+
+
 html {
   margin: 0;
   padding: 0;
@@ -644,6 +646,7 @@ html {
   display: block;
   width: 100%;
 }
+
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -696,8 +699,8 @@ html {
 }
 .menu-item-gtranslate div {
   position: relative !important;
-}
 
+}
 /* Small menu. */
 .menu-toggle {
   background-color: transparent;
@@ -790,6 +793,28 @@ html {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.resources {
+  color: white;
+}
+
+.resources .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 200px;
+  height: 250px;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+.resources .card p {
+  margin: 0;
+}
+.resources .card .card-button {
+  border-radius: 20px;
+  width: fit-content;
 }
 
 /* Comments
@@ -979,6 +1004,17 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
+
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+
 }
 
 /*# sourceMappingURL=style.css.map */
