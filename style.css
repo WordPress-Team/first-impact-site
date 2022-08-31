@@ -792,6 +792,16 @@ html {
   margin: 0 0 1.5em;
 }
 
+.contact-form .text-box {
+  width: 50%;
+  height: 700px;
+  background-color: red;
+}
+.contact-form .form-box {
+  width: 50%;
+  background-color: green;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {

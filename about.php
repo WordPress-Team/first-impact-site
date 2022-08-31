@@ -12,5 +12,6 @@
 ?>
 
 <?php get_header(); ?>
+<? get_template_part('get-template-parts/contact-section'); ?>
 
 <?php get_footer(); ?>
