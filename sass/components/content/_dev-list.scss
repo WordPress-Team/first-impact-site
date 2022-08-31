@@ -14,11 +14,11 @@ $montserrat: 'Montserrat', sans-serif;
 
 .dev-list {
     background-color: #D9ED92;
-    margin: 5px, 5px;
+    margin: 5px 5px;
 
 h2{
     text-align: center; 
-    font-family: $montserrat; 
+    font-family: $dm-serif;
     margin-bottom: 50px;
     padding-top: 20px;
         
@@ -31,11 +31,11 @@ h2{
     align-items: center;
 
 h3{
-    font-family: $montserrat  
+    font-family: $dm-serif  
     }
 
 p{
-    font-family: $dm-serif;
+    font-family: $montserrat;
 }
 
 .devs{
@@ -56,12 +56,13 @@ p{
 
     @media screen and (min-width: 768px) {
         .dev-list {
-            background-color: #D9ED92;
+            // background-color: #D9ED92;
             margin: 5px, 5px;
     
         h2{
+            text-align: left;
             font-size: 50px;
-            font-family: $montserrat; 
+            font-family: $dm-serif;
             margin-bottom: 50px;
             padding-top: 20px;
           
@@ -74,11 +75,11 @@ p{
             align-items: center;
         
         h3{
-            font-family: $montserrat  
+            font-family: $dm-serif
         }
     
         p{
-            font-family: $dm-serif;
+            font-family: $montserrat; 
         }
     
         .devs{

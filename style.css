@@ -726,11 +726,11 @@ textarea {
 
 .dev-list {
   background-color: #D9ED92;
-  margin: 5px, 5px;
+  margin: 5px 5px;
 }
 .dev-list h2 {
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "DM Serif Text", serif;
   margin-bottom: 50px;
   padding-top: 20px;
 }
@@ -740,10 +740,10 @@ textarea {
   align-items: center;
 }
 .dev-list .water-team h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "DM Serif Text", serif;
 }
 .dev-list .water-team p {
-  font-family: "DM Serif Text", serif;
+  font-family: "Montserrat", sans-serif;
 }
 .dev-list .water-team .devs {
   text-align: center;
@@ -757,12 +757,12 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .dev-list {
-    background-color: #D9ED92;
     margin: 5px, 5px;
   }
   .dev-list h2 {
+    text-align: left;
     font-size: 50px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "DM Serif Text", serif;
     margin-bottom: 50px;
     padding-top: 20px;
   }
@@ -773,10 +773,10 @@ textarea {
     align-items: center;
   }
   .dev-list .water-team h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "DM Serif Text", serif;
   }
   .dev-list .water-team p {
-    font-family: "DM Serif Text", serif;
+    font-family: "Montserrat", sans-serif;
   }
   .dev-list .water-team .devs {
     text-align: center;
