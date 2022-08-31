@@ -1,29 +1,73 @@
+.card {
+
+  background-color: $dark-blue;
+  border-radius: 0.5rem;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+  padding-bottom: 1rem;
+  overflow: hidden;
+  background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(7,23,35,1) 50%);
+  img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    height: max(10rem, 25vh);
+    max-height: max(10rem, 30vh);
+    aspect-ratio: 4/3;
+    // filter: grayscale(100);
+
+    ~ * {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  // &:hover,
+  // &:focus-within {
+  //   --card-gradient: #24a9d5 max(8.5rem, 20vh);
+  // }
+
+  &::after {
+    content: '';
+    display: block;
+    // position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(7,23,35,1) 30%);;
+  }
+}
+
+
 .resources {
-  color: white;
-  width: 100%;
-  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  margin: 0;
+  line-height: 1.5;
+}
 
-  .resource-title {
-    color: black;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 200px;
-    height: 250px;
-    background-color: gray;
-    border-radius: 10px;
-    padding: 10px;
-    
-    p {
-        margin: 0;
-    }
+.card-title {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
 
-    .card-button {
-      border-radius: 20px;
-      width: fit-content;
-      
-    }
-  }
+.card a {
+  color: inherit;
+}
+
+.card-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+  grid-gap: 40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
