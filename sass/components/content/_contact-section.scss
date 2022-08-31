@@ -1,15 +1,28 @@
     
 .contact-form{
+    
 
     .text-box{
-        width: 50%;
+        
         height: 700px;
         background-color: red;
     }
     .form-box{
-        width: 50%;
+        
         height: 700px;
         background-color: green;
 
     }
+
+    .wpcf7-form {
+       margin: auto;
+    }
+
+    input{
+        background-color:green;
+        border: none;
+        border-bottom: 1px solid white;
+    }
+
+    
 }

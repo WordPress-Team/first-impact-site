@@ -793,14 +793,20 @@ html {
 }
 
 .contact-form .text-box {
-  width: 50%;
   height: 700px;
   background-color: red;
 }
 .contact-form .form-box {
-  width: 50%;
   height: 700px;
   background-color: green;
+}
+.contact-form .wpcf7-form {
+  margin: auto;
+}
+.contact-form input {
+  background-color: green;
+  border: none;
+  border-bottom: 1px solid white;
 }
 
 /* Comments
