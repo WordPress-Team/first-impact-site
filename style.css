@@ -832,12 +832,8 @@ html {
   }
   .info-section .content {
     font-size: 1.15em;
-  margin: 0 5%;
+  }
 }
-.info-section .title {
-  font-family: "DM Serif Text", serif;
-}
-
 .gallery {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
