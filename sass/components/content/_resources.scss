@@ -1,7 +1,15 @@
+.resources {
+    width: 100%;
+    padding: 0 6%;
+
+    .resource-title {
+        text-align: center;
+        font-family: $dm-serif;
+    }
+}
+
 .gallery {
   display: grid !important;
-  //width: cover;
-  //height: 200vh;
   grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
   grid-template-rows: auto;
   grid-gap: 2rem !important;
