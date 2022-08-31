@@ -795,6 +795,7 @@ html {
 .info-section {
   width: 100%;
   padding: 0 6%;
+  gap: 50px;
   font-family: "Montserrat", sans-serif;
 }
 .info-section .intro {
@@ -834,6 +835,15 @@ html {
     font-size: 1.15em;
   }
 }
+.resources {
+  width: 100%;
+  padding: 0 6%;
+}
+.resources .resource-title {
+  text-align: center;
+  font-family: "DM Serif Text", serif;
+}
+
 .gallery {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
@@ -895,6 +905,12 @@ html {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .resources .resource-title {
+    text-align: left;
+    font-size: 2.25em;
+  }
+}
 /* Comments
 --------------------------------------------- */
 .comment-content a {
