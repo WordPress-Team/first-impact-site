@@ -844,10 +844,14 @@ html {
   cursor: pointer;
   width: max-content;
   display: inline-block;
-  background: #fff;
-  color: #090b34;
+  background: #FFFFFF;
+  color: #071723;
   border: none;
   border-radius: 15px;
+}
+.gallery .card-content .redirect-button:hover {
+  background-color: #071723;
+  color: #FFFFFF;
 }
 .gallery .card-content a {
   text-decoration: none;

@@ -51,10 +51,15 @@
           cursor: pointer;
           width: max-content;
           display: inline-block;
-          background: #fff;
-          color: #090b34;
+          background: $white;
+          color: $dark-blue;
           border: none;
           border-radius:15px;
+
+          &:hover {
+            background-color: $dark-blue;
+            color: $white;
+          }
       }
 
       a {
