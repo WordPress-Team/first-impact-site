@@ -99,6 +99,8 @@ function first_impact_site_setup() {
 			'flex-height' => true,
 		)
 	);
+
+	add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
 }
 add_action( 'after_setup_theme', 'first_impact_site_setup' );
 
