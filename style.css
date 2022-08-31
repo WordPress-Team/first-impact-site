@@ -60,6 +60,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -619,6 +621,26 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  height: 60px;
+  width: 100%;
+  background-color: #071723;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.site-header .site-branding {
+  float: left;
+  width: 32px;
+  margin: 10px;
+}
+
 .main-navigation {
   display: block;
   width: 100%;
@@ -629,6 +651,7 @@ textarea {
   margin: 0;
   padding-left: 0;
 }
+
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -654,26 +677,76 @@ textarea {
 }
 .main-navigation li {
   position: relative;
+  padding: 0.3em 0;
+  margin: 5px 0;
 }
-.main-navigation a {
+.main-navigation li:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  border-bottom: 3px solid #D9ED92;
+}
+.main-navigation .menu-item a {
   display: block;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+}
+.main-navigation .menu-item a:hover {
+  color: #D9ED92;
+  font-weight: 600;
+}
+.menu-item-gtranslate div {
+  position: relative !important;
+
 }
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block;
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  padding: 0.4em 0;
+  float: right;
+}
+.menu-toggle .burger-menu {
+  width: 32px;
+  margin: 10px;
 }
 
-@media screen and (min-width: 37.5em) {
+.main-navigation.toggled ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+  top: -10px;
+  background-color: #071723;
+  padding: 20px;
+  height: fit-content;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 
   .main-navigation ul {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 8px;
+  }
+  .main-navigation ul li {
+    margin: 0 20px;
+  }
+
+  .menu-item-gtranslate #gtranslate_wrapper {
+    position: absolute;
+    width: 173px;
+    height: 32px;
   }
 }
+
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -725,6 +798,7 @@ textarea {
 .resources {
   color: white;
 }
+
 .resources .card {
   display: flex;
   flex-direction: column;
@@ -741,6 +815,7 @@ textarea {
 .resources .card .card-button {
   border-radius: 20px;
   width: fit-content;
+
 }
 
 /* Comments
@@ -930,6 +1005,17 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
+
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+
 }
 
 /*# sourceMappingURL=style.css.map */
