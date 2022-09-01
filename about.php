@@ -13,4 +13,6 @@
 
 <?php get_header(); ?>
 
+<?php get_template_part('template-parts/mission-statement');?>
+
 <?php get_footer(); ?>
