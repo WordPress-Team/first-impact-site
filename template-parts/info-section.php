@@ -73,8 +73,8 @@
 
 <!-- Start of Gallery for solutions -->
 <section class="gallery solutions">
-    <div class="cards" style="background:url('http://firstimpactsite.local/wp-content/uploads/2022/08/river-drying-up-scaled.jpg'); ">
-        <div class="card-content">
+    <div class="cards-border" style="background:url('http://firstimpactsite.local/wp-content/uploads/2022/08/river-drying-up-scaled.jpg'); ">
+        <div class="card-content-solution">
             <h2 class="card-title">Hello</h2>
             <p>Hello</p>
             <a href="#" target="_blank">
@@ -82,8 +82,8 @@
             </a>
         </div>
     </div>
-    <div class="cards" style="background:url('http://firstimpactsite.local/wp-content/uploads/2022/08/river-drying-up-scaled.jpg'); ">
-        <div class="card-content">
+    <div class="cards-border" style="background:url('http://firstimpactsite.local/wp-content/uploads/2022/08/river-drying-up-scaled.jpg'); ">
+        <div class="card-content-solution">
             <h2 class="card-title">Hello</h2>
             <p>Hello</p>
             <a href="#" target="_blank">
@@ -91,8 +91,8 @@
             </a>
         </div>
     </div>
-    <div class="cards" style="background:url('http://firstimpactsite.local/wp-content/uploads/2022/08/river-drying-up-scaled.jpg'); ">
-        <div class="card-content">
+    <div class="cards-border" style="background:url('http://firstimpactsite.local/wp-content/uploads/2022/08/river-drying-up-scaled.jpg'); ">
+        <div class="card-content-solution">
             <h2 class="card-title">Hello</h2>
             <p>Hello</p>
             <a href="#" target="_blank">
@@ -100,8 +100,8 @@
             </a>
         </div>
     </div>
-    <div class="cards" style="background:url('http://firstimpactsite.local/wp-content/uploads/2022/08/river-drying-up-scaled.jpg'); ">
-        <div class="card-content">
+    <div class="cards-border" style="background:url('http://firstimpactsite.local/wp-content/uploads/2022/08/river-drying-up-scaled.jpg'); ">
+        <div class="card-content-solution">
             <h2 class="card-title">Hello</h2>
             <p>Hello</p>
             <a href="#" target="_blank">
