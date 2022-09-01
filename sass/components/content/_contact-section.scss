@@ -1,28 +1,180 @@
-    
+ // SITE COLORS
+$dark-blue: #071723;
+$light-blue: #184E77;
+$blue-green: #34A0A4;
+$yellow-green: #D9ED92;
+$white: #FFFFFF;
+
+// SITE TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$dm-serif: 'DM Serif Text', serif;
+$montserrat: 'Montserrat', sans-serif;   
+
+
 .contact-form{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
     
+
 
     .text-box{
         
-        height: 700px;
-        background-color: red;
+        height: 450px;
+        margin: 0 auto;
+        
+
+        h2{
+            text-align: center;
+            padding-top: 30px;
+            font-family: $dm-serif;
+        }
+
+        p{
+            font-family: $montserrat;
+        }
+        .hours{
+            padding: 20px;
+
+            .business{
+                font-size: 18px;
+                font-family: $dm-serif;
+                margin: 20px 0px 0px;
+            }
+            .email{
+                font-size: 18px;
+                margin-top: 40px;
+                font-family: $dm-serif;
+                margin: 20px 0px 0px;
+            }
+            .time{
+                
+                margin: 0px 0px 24px 30px;
+                
+
+            }
+
+        }
+       
     }
     .form-box{
         
-        height: 700px;
-        background-color: green;
+        height: 450px;
+        background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/08/half-dead-tree.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
+        .submit{
+            color: white;
+            margin-left: 50px;
+            background-color: $dark-blue;
+            border-radius: 20px;
+            padding-bottom: 10px;
+            width: 110px;
+        }
+        
+     }
+
+    label{
+        color: white;
+        
     }
 
     .wpcf7-form {
-       margin: auto;
+       margin-left: 20px;
+       padding-top: 40px;
     }
 
     input{
-        background-color:green;
-        border: none;
-        border-bottom: 1px solid white;
+        
+        background: none;
+        width: 250px;
+        
+    
     }
-
+    
     
 }
+
+@media screen  and (min-width: 768px) {
+    .contact-form{
+        display: flex;
+        flex-direction: row;
+        
+        
+    
+
+        .text-box{
+            
+            height: 450px;
+            width: 50%;
+            
+    
+            h2{
+                
+                padding-top: 20px;
+                text-align: left;
+                margin-left: 30px;
+            }
+            .hours{
+                margin-left: 40px;
+    
+                .business{
+                    font-size: 20px;
+                }
+                .email{
+                    font-size: 20px;
+                    margin-top: 40px;
+                }
+                .time{
+                    margin-left: 30px;
+                }
+    
+            }
+           
+        }
+        .form-box{
+            
+            width: 50%;
+
+            label{
+                color: white;
+                
+            }
+
+            .wpcf7-form {
+                margin-left: 20px;
+                padding-top: 40px;
+                font-size: 18px;
+             }
+
+             input{
+        
+                border: 1px solid white;
+                background: transparent;
+            
+            }
+            input[type='text'], [type='email'], textarea {
+                background: none;
+                border: none;
+                border-bottom: solid 2px #fff;
+                font-family: $dm-serif;
+                
+    }
+            
+            .submit{
+                
+                margin-left: 100px;
+                width: 150px;
+                font-family: $dm-serif;
+            }
+        }
+        
+    }
+    
+    
+}
+

@@ -1,5 +1,13 @@
 <div class= "contact-form">
     <div class="text-box">
+        <h2>Contact Us</h2>
+        <div class="hours">
+            <p class="business">Business Hours:</p>
+            <p class="time">8a.m.-5p.m PST</p>
+            <p class="email">Email:</p>
+            <p class="time">something@alphaworks.tech</p>
+    
+        </div>
 
 
     </div>
