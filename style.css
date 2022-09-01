@@ -62,8 +62,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -795,20 +793,23 @@ html {
 }
 
 .hero-section {
-  background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/09/drinking-dirty-water.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
-  width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+  background-position: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  top: -10px;
 }
 .hero-section h1 {
   font-family: "DM Serif Text", serif;
   padding-top: 40px;
+  margin: 0;
 }
 .hero-section h3 {
   font-family: "Montserrat", sans-serif;
@@ -816,7 +817,6 @@ html {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/08/drinking-dirty-water.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -825,16 +825,26 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-    margin: 50px 50px;
+    color: #FFFFFF;
   }
   .hero-section h1 {
     font-size: 60px;
     padding-top: 40px;
+    z-index: 1;
   }
   .hero-section h3 {
     font-size: 30px;
-    padding-top: 50px;
+    z-index: 1;
+  }
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(7, 23, 35, 0), #071723);
+    opacity: 0.6;
   }
 }
 .info-section {
