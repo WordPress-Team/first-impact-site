@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,37 +12,38 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-	<div class="footerBox">
-    <?php
-            // wp_nav_menu(array(
-            //     'menu' => 'Nav Menu',
-            //     'theme_location' => 'footer-menu',
-            //     'menu_class' => 'footer-menu',
-            //     'menu_id' => 'footer-id'
-            // ))
-    ?>
+<footer id="colophon" class="site-footer">
+        <div class="footerBox">
+                <?php
+                // wp_nav_menu(array(
+                //     'menu' => 'Nav Menu',
+                //     'theme_location' => 'footer-menu',
+                //     'menu_class' => 'footer-menu',
+                //     'menu_id' => 'footer-id'
+                // ))
+                ?>
 
 
-</div>
+        </div>
 
         <div class="footerBox">
-        <div class="socialMedia">
-                <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/08/github-1.png" alt=""></a>
-                <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/08/email.png" alt=""></a>
-                <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/08/impact-zone-1.png" alt=""></a>                                                                 
-            </div>
-            <p>&copy; Impact Zone </p>
-            <p>   Water Scarcity 2022</p>
+                <div class="socialMedia">
+                        <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/github-1.png" alt=""></a>
+                        <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/email-1.png" alt=""></a>
+                        <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/impact-zone.png" alt=""></a>
+                </div>
+                <p>&copy; Impact Zone </p>
+                <p> Water Scarcity 2022</p>
         </div>
- 
-	
 
-		
-	</footer><!-- #colophon -->
+
+
+
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 
 
 </body>
+
 </html>

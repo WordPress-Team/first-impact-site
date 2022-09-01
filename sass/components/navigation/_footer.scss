@@ -13,7 +13,7 @@ footer{
 .footerBox{
     font-family: $dm-serif;
     width: 30%;
-    height: 200px;
+    // height: 200px;
     float: left;
     margin: 20px ;
     text-align: center;
@@ -43,23 +43,10 @@ footer{
 .footerBox p{
     margin: 16px 0px 0px;
 }
-.socialMedia{
-   
-}
-.socialMedia i{
-    margin: 0px 10px;
-}
-.socialMedia i{
-    color: #000;
-}
-.socialMedia i:hover{
-    color: darkmagenta;
-}
-.socialMedia i:active{
-    color:cornflowerblue;
-}
+
 .socialMedia a img{
  border-radius: 50%; 
- margin: 10px;
+ margin: 5px;
+ scale: 0.6;
 }
 /* This is the end of footer  */
