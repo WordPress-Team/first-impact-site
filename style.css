@@ -807,6 +807,7 @@ html {
   text-align: center;
   padding-top: 30px;
   font-family: "DM Serif Text", serif;
+  font-size: 30px;
 }
 .contact-form .text-box p {
   font-family: "Montserrat", sans-serif;
@@ -829,7 +830,7 @@ html {
   margin: 0px 0px 24px 30px;
 }
 .contact-form .form-box {
-  height: 450px;
+  height: 500px;
   background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/08/half-dead-tree.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -842,6 +843,8 @@ html {
   border-radius: 20px;
   padding-bottom: 10px;
   width: 110px;
+  font-size: 20px;
+  border: 1px solid #fff;
 }
 .contact-form label {
   color: white;
@@ -849,10 +852,13 @@ html {
 .contact-form .wpcf7-form {
   margin-left: 20px;
   padding-top: 40px;
+  font-size: 18px;
 }
 .contact-form input {
   background: none;
-  width: 250px;
+  border: none;
+  border-bottom: solid 2px #fff;
+  font-family: "DM Serif Text", serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -866,7 +872,7 @@ html {
   }
   .contact-form .text-box h2 {
     padding-top: 20px;
-    text-align: left;
+    text-align: center;
     margin-left: 30px;
   }
   .contact-form .text-box .hours {
@@ -892,10 +898,6 @@ html {
     margin-left: 20px;
     padding-top: 40px;
     font-size: 18px;
-  }
-  .contact-form .form-box input {
-    border: 1px solid white;
-    background: transparent;
   }
   .contact-form .form-box input[type=text], .contact-form .form-box [type=email], .contact-form .form-box textarea {
     background: none;

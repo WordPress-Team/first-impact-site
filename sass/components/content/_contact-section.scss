@@ -30,6 +30,7 @@ $montserrat: 'Montserrat', sans-serif;
             text-align: center;
             padding-top: 30px;
             font-family: $dm-serif;
+            font-size: 30px;
         }
 
         p{
@@ -61,7 +62,7 @@ $montserrat: 'Montserrat', sans-serif;
     }
     .form-box{
         
-        height: 450px;
+        height: 500px;
         background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/08/half-dead-tree.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -74,6 +75,8 @@ $montserrat: 'Montserrat', sans-serif;
             border-radius: 20px;
             padding-bottom: 10px;
             width: 110px;
+            font-size: 20px;
+            border: 1px solid #fff;
         }
         
      }
@@ -86,15 +89,16 @@ $montserrat: 'Montserrat', sans-serif;
     .wpcf7-form {
        margin-left: 20px;
        padding-top: 40px;
+       font-size: 18px;
     }
 
     input{
-        
         background: none;
-        width: 250px;
+        border: none;
+        border-bottom: solid 2px #fff;
+        font-family: $dm-serif;
         
-    
-    }
+     }
     
     
 }
@@ -116,7 +120,7 @@ $montserrat: 'Montserrat', sans-serif;
             h2{
                 
                 padding-top: 20px;
-                text-align: left;
+                text-align: center;
                 margin-left: 30px;
             }
             .hours{
@@ -151,12 +155,7 @@ $montserrat: 'Montserrat', sans-serif;
                 font-size: 18px;
              }
 
-             input{
-        
-                border: 1px solid white;
-                background: transparent;
-            
-            }
+             
             input[type='text'], [type='email'], textarea {
                 background: none;
                 border: none;
