@@ -1,0 +1,66 @@
+// SITE COLORS
+$dark-blue: #071723;
+$light-blue: #184E77;
+$blue-green: #34A0A4;
+$yellow-green: #D9ED92;
+$white: #FFFFFF;
+
+// SITE TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$dm-serif: 'DM Serif Text', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+.hero-section{
+    background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/08/drinking-dirty-water.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    h1{
+        
+        font-family: $dm-serif;
+        padding-top: 40px;
+    }
+    h3{
+        
+        font-family: $montserrat;
+        
+    }
+}
+
+@media screen and (min-width: 768px){
+    .hero-section{
+        background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/08/drinking-dirty-water.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        margin: 50px 50px;
+
+        h1{
+            font-size: 60px;
+            
+            padding-top: 40px;
+        }
+        h3{
+            font-size: 30px;
+            
+            padding-top: 50px;
+        }
+    }
+}
+    
+
