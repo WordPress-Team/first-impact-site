@@ -62,6 +62,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -1043,6 +1045,69 @@ footer {
   .resources .resource-title {
     text-align: left;
     font-size: 2.25em;
+.dev-list {
+  background-color: #D9ED92;
+  margin: 5px 5px;
+}
+.dev-list h2 {
+  text-align: center;
+  font-family: "DM Serif Text", serif;
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+.dev-list .water-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dev-list .water-team h3 {
+  font-family: "DM Serif Text", serif;
+}
+.dev-list .water-team p {
+  font-family: "Montserrat", sans-serif;
+}
+.dev-list .water-team .devs {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.dev-list .water-team .dev-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .dev-list {
+    margin: 5px, 5px;
+  }
+  .dev-list h2 {
+    text-align: left;
+    font-size: 50px;
+    font-family: "DM Serif Text", serif;
+    margin-bottom: 50px;
+    padding-top: 20px;
+  }
+  .dev-list .water-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .dev-list .water-team h3 {
+    font-family: "DM Serif Text", serif;
+  }
+  .dev-list .water-team p {
+    font-family: "Montserrat", sans-serif;
+  }
+  .dev-list .water-team .devs {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .dev-list .water-team .dev-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+
   }
 }
 /* Comments

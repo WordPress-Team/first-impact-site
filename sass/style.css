@@ -60,8 +60,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -769,6 +768,22 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+.dev-list {
+  background-color: #D9ED92;
+}
+
+.dev-list h3 {
+  text-align: center;
+}
+
+.dev-list .water-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
