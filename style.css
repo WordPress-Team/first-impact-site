@@ -62,8 +62,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -634,7 +632,7 @@ html {
   background-color: #071723;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 9999;
 }
 .site-header .site-branding {
   float: left;
@@ -712,13 +710,18 @@ html {
   margin: 10px;
 }
 
-.main-navigation.toggled ul {
-  display: flex;
+.main-navigation.toggled {
+  display: block;
+  right: 0px;
+  width: 100%;
+}
+
+.main-navigation .toggled ul {
+  display: block;
   flex-direction: column;
   align-items: flex-end;
   position: relative;
   width: 100%;
-  top: -10px;
   background-color: #071723;
   padding: 20px;
   height: fit-content;
@@ -780,7 +783,7 @@ footer {
   float: left;
   margin: 20px;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
   /* border: 1px solid #000; */
 }
 
@@ -791,21 +794,7 @@ footer {
 
 .footerBox a {
   text-decoration: none;
-  color: white;
-}
-
-.footerBox ul li {
-  font-weight: bolder;
-  text-transform: uppercase;
-  margin: 20px 20px;
-}
-
-.footerBox a:hover {
-  color: darkmagenta;
-}
-
-.footerBox a:active {
-  color: cornflowerblue;
+  color: #FFFFFF;
 }
 
 .footerBox p {
