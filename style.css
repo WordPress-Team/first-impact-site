@@ -710,12 +710,6 @@ html {
   margin: 10px;
 }
 
-.main-navigation.toggled {
-  display: block;
-  right: 0px;
-  width: 100%;
-}
-
 .main-navigation .toggled ul {
   display: block;
   flex-direction: column;

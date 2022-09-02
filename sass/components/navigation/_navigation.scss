@@ -29,7 +29,6 @@ html {
 	// padding: 10px;
 	.site-branding{
 		float: left;
-		//margin: 5px 15px;
 		width: 32px;
 		margin: 10px;
 	}
@@ -140,12 +139,6 @@ html {
 }
 
 // Toggled navigation
-.main-navigation.toggled {
-    display: block;
-    right: 0px;
-    width: 100%;
-}
-
 .main-navigation .toggled ul {
 	display: block;
 	flex-direction: column;
