@@ -57,12 +57,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+ 
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -859,6 +857,122 @@ footer {
   clear: both;
   margin: 0 0 1.5em;
 }
+
+.contact-form {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .text-box {
+  height: 450px;
+  margin: 0 auto;
+}
+.contact-form .text-box h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-family: "DM Serif Text", serif;
+  font-size: 30px;
+}
+.contact-form .text-box p {
+  font-family: "Montserrat", sans-serif;
+}
+.contact-form .text-box .hours {
+  padding: 20px;
+}
+.contact-form .text-box .hours .business {
+  font-size: 18px;
+  font-family: "DM Serif Text", serif;
+  margin: 20px 0px 0px;
+}
+.contact-form .text-box .hours .email {
+  font-size: 18px;
+  margin-top: 40px;
+  font-family: "DM Serif Text", serif;
+  margin: 20px 0px 0px;
+}
+.contact-form .text-box .hours .time {
+  margin: 0px 0px 24px 30px;
+}
+.contact-form .form-box {
+  height: 500px;
+  background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/08/half-dead-tree.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-form .form-box .submit {
+  color: white;
+  margin-left: 50px;
+  background-color: #071723;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  width: 110px;
+  font-size: 20px;
+  border: 1px solid #fff;
+}
+.contact-form label {
+  color: white;
+}
+.contact-form .wpcf7-form {
+  margin-left: 20px;
+  padding-top: 40px;
+  font-size: 18px;
+}
+.contact-form input {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #fff;
+  font-family: "DM Serif Text", serif;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-form .text-box {
+    height: 450px;
+    width: 50%;
+  }
+  .contact-form .text-box h2 {
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 30px;
+  }
+  .contact-form .text-box .hours {
+    margin-left: 40px;
+  }
+  .contact-form .text-box .hours .business {
+    font-size: 20px;
+  }
+  .contact-form .text-box .hours .email {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .contact-form .text-box .hours .time {
+    margin-left: 30px;
+  }
+  .contact-form .form-box {
+    width: 50%;
+  }
+  .contact-form .form-box label {
+    color: white;
+  }
+  .contact-form .form-box .wpcf7-form {
+    margin-left: 20px;
+    padding-top: 40px;
+    font-size: 18px;
+  }
+  .contact-form .form-box input[type=text], .contact-form .form-box [type=email], .contact-form .form-box textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #fff;
+    font-family: "DM Serif Text", serif;
+  }
+  .contact-form .form-box .submit {
+    margin-left: 100px;
+    width: 150px;
+    font-family: "DM Serif Text", serif;
 
 .hero-section {
   position: relative;
