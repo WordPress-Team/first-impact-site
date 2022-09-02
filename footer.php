@@ -27,9 +27,9 @@
 
         <div class="footerBox">
         <div class="socialMedia">
-                <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/08/github-1.png" alt=""></a>
-                <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/08/email.png" alt=""></a>
-                <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/08/impact-zone-1.png" alt=""></a>                                                                 
+                <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/github-1.png" alt=""></a>
+                <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/email-1.png" alt=""></a>
+                <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/impact-zone.png" alt=""></a>                                                                 
             </div>
             <p>&copy; Impact Zone </p>
             <p>   Water Scarcity 2022</p>

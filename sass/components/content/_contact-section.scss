@@ -1,28 +1,11 @@
- // SITE COLORS
-$dark-blue: #071723;
-$light-blue: #184E77;
-$blue-green: #34A0A4;
-$yellow-green: #D9ED92;
-$white: #FFFFFF;
-
-// SITE TYPOGRAPHY
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-$dm-serif: 'DM Serif Text', serif;
-$montserrat: 'Montserrat', sans-serif;   
-
-
 .contact-form{
-    margin: 20px 0px;
+    // margin: 20px 0px;
     display: flex;
     flex-direction: column;
     
-
-
     .text-box{
         
-        height: 450px;
+        // height: 450px;
         margin: 0 auto;
         
 
@@ -37,7 +20,7 @@ $montserrat: 'Montserrat', sans-serif;
             font-family: $montserrat;
         }
         .hours{
-            padding: 20px;
+            // padding: 20px;
 
             .business{
                 font-size: 18px;
@@ -62,43 +45,88 @@ $montserrat: 'Montserrat', sans-serif;
     }
     .form-box{
         
-        height: 500px;
-        background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/08/half-dead-tree.jpg);
-        background-position: center;
+        // height: 500px;
+        background-image: linear-gradient(
+            rgba(7, 23, 35, 0.4),
+            rgba(7, 23, 35, 0.4)
+        ), url('http://firstimpactsite.local/wp-content/uploads/2022/09/half-dead-tree.jpg');
+        background-position: 60% center;
         background-repeat: no-repeat;
         background-size: cover;
+        padding: 25px;
 
-        .submit{
+        .wpcf7-submit {
+            display: flex;
             color: white;
-            margin-left: 50px;
+            // margin-left: 50px;
+            margin-left: auto;
+            margin-right: auto;
             background-color: $dark-blue;
             border-radius: 20px;
-            padding-bottom: 10px;
-            width: 110px;
+            padding: 0.4em 0.6em;
             font-size: 20px;
             border: 1px solid #fff;
+            width: fit-content;
+            
         }
+
+        label{
+            color: white;
+            font-family: $dm-serif;
+        }
+
+        input{
+            font-family: $dm-serif;
+            width: 100%;
+            
+         }
+    
+         input[type='text'], [type='email'], textarea {
+            background: none;
+            border: none;
+            border-bottom: solid 2px #fff;
+            font-family: $dm-serif;
+            color: $white;
+        }
+
+        textarea {
+            height: 100px;
+        }
+        
         
      }
 
-    label{
-        color: white;
-        
-    }
-
-    .wpcf7-form {
-       margin-left: 20px;
-       padding-top: 40px;
-       font-size: 18px;
-    }
-
-    input{
+    select {
         background: none;
         border: none;
         border-bottom: solid 2px #fff;
         font-family: $dm-serif;
-        
-     }
+        width: 100%;
+    }
+    .wpcf7-select{
+        // color: #F39C12;
+        color: $yellow-green;
+    }
+    .wpcf7-select:hover{
+        // color: #F39C12;
+        color: $yellow-green;
+        background-color: $dark-blue;
+    }
+
+    .wpcf7-email, .wpcf7-text, .wpcf7-textarea {
+        // background: none;
+        // border: none;
+        // border-bottom: solid 2px #fff;
+    }
+
+    .wpcf7-form {
+    
+    //    margin-left: 20px;
+       padding-top: 40px;
+       font-size: 18px;
+    }
+
+    
     
     
 }
@@ -150,19 +178,13 @@ $montserrat: 'Montserrat', sans-serif;
             }
 
             .wpcf7-form {
-                margin-left: 20px;
-                padding-top: 40px;
+                padding: 40px 20px;
+                // padding-top: 40px;
                 font-size: 18px;
              }
 
              
-            input[type='text'], [type='email'], textarea {
-                background: none;
-                border: none;
-                border-bottom: solid 2px #fff;
-                font-family: $dm-serif;
-                
-    }
+            
             
             .submit{
                 

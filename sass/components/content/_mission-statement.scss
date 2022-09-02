@@ -1,7 +1,30 @@
-// This is the start of the mission statement
-// SITE TYPOGRAPHY
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.mission-statement {
+    width: 100%;
+    padding: 0 6%;
+    text-align: center;
+    .infoBox {
+        h2 {
+            font-family: $dm-serif;
+        }
 
-$dm-serif: 'DM Serif Text', serif;
-$montserrat: 'Montserrat', sans-serif;
+        p {
+            font-family: $montserrat;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .mission-statement {
+        text-align: left;
+        
+        .infoBox {
+            h2 {
+                font-size: 2.25em;
+            }
+
+            p {
+                font-size: 1.15em;
+            }
+        }
+    }
+}

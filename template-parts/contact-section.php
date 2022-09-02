@@ -1,4 +1,4 @@
-<div class= "contact-form">
+<div class= "contact-form" id="contact-section">
     <div class="text-box">
         <h2>Contact Us</h2>
         <div class="hours">
@@ -12,7 +12,7 @@
 
     </div>
     <div class="form-box">
-   <?php echo apply_shortcodes( '[contact-form-7 id="26" title="Contact form 1"]' ); ?>
+   <?php echo apply_shortcodes( '[contact-form-7 id="35" title="Contact form 1"]' ); ?>
 
 
     </div>

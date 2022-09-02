@@ -64,12 +64,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -640,7 +634,7 @@ html {
   background-color: #071723;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 99999;
 }
 .site-header .site-branding {
   float: left;
@@ -783,11 +777,10 @@ footer {
 .footerBox {
   font-family: "DM Serif Text", serif;
   width: 30%;
-  height: 200px;
   float: left;
   margin: 20px;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
   /* border: 1px solid #000; */
 }
 
@@ -798,46 +791,17 @@ footer {
 
 .footerBox a {
   text-decoration: none;
-  color: white;
-}
-
-.footerBox ul li {
-  font-weight: bolder;
-  text-transform: uppercase;
-  margin: 20px 20px;
-}
-
-.footerBox a:hover {
-  color: darkmagenta;
-}
-
-.footerBox a:active {
-  color: cornflowerblue;
+  color: #FFFFFF;
 }
 
 .footerBox p {
   margin: 16px 0px 0px;
 }
 
-.socialMedia i {
-  margin: 0px 10px;
-}
-
-.socialMedia i {
-  color: #000;
-}
-
-.socialMedia i:hover {
-  color: darkmagenta;
-}
-
-.socialMedia i:active {
-  color: cornflowerblue;
-}
-
 .socialMedia a img {
   border-radius: 50%;
-  margin: 10px;
+  margin: 5px;
+  scale: 0.6;
 }
 
 /* This is the end of footer  */
@@ -868,12 +832,10 @@ footer {
 }
 
 .contact-form {
-  margin: 20px 0px;
   display: flex;
   flex-direction: column;
 }
 .contact-form .text-box {
-  height: 450px;
   margin: 0 auto;
 }
 .contact-form .text-box h2 {
@@ -884,9 +846,6 @@ footer {
 }
 .contact-form .text-box p {
   font-family: "Montserrat", sans-serif;
-}
-.contact-form .text-box .hours {
-  padding: 20px;
 }
 .contact-form .text-box .hours .business {
   font-size: 18px;
@@ -903,35 +862,59 @@ footer {
   margin: 0px 0px 24px 30px;
 }
 .contact-form .form-box {
-  height: 500px;
-  background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/08/half-dead-tree.jpg);
-  background-position: center;
+  background-image: linear-gradient(rgba(7, 23, 35, 0.4), rgba(7, 23, 35, 0.4)), url("http://firstimpactsite.local/wp-content/uploads/2022/09/half-dead-tree.jpg");
+  background-position: 60% center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 25px;
 }
-.contact-form .form-box .submit {
+.contact-form .form-box .wpcf7-submit {
+  display: flex;
   color: white;
-  margin-left: 50px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #071723;
   border-radius: 20px;
-  padding-bottom: 10px;
-  width: 110px;
+  padding: 0.4em 0.6em;
   font-size: 20px;
   border: 1px solid #fff;
+  width: fit-content;
 }
-.contact-form label {
+.contact-form .form-box label {
   color: white;
+  font-family: "DM Serif Text", serif;
 }
-.contact-form .wpcf7-form {
-  margin-left: 20px;
-  padding-top: 40px;
-  font-size: 18px;
+.contact-form .form-box input {
+  font-family: "DM Serif Text", serif;
+  width: 100%;
 }
-.contact-form input {
+.contact-form .form-box input[type=text], .contact-form .form-box [type=email], .contact-form .form-box textarea {
   background: none;
   border: none;
   border-bottom: solid 2px #fff;
   font-family: "DM Serif Text", serif;
+  color: #FFFFFF;
+}
+.contact-form .form-box textarea {
+  height: 100px;
+}
+.contact-form select {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #fff;
+  font-family: "DM Serif Text", serif;
+  width: 100%;
+}
+.contact-form .wpcf7-select {
+  color: #D9ED92;
+}
+.contact-form .wpcf7-select:hover {
+  color: #D9ED92;
+  background-color: #071723;
+}
+.contact-form .wpcf7-form {
+  padding-top: 40px;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
@@ -968,20 +951,36 @@ footer {
     color: white;
   }
   .contact-form .form-box .wpcf7-form {
-    margin-left: 20px;
-    padding-top: 40px;
+    padding: 40px 20px;
     font-size: 18px;
-  }
-  .contact-form .form-box input[type=text], .contact-form .form-box [type=email], .contact-form .form-box textarea {
-    background: none;
-    border: none;
-    border-bottom: solid 2px #fff;
-    font-family: "DM Serif Text", serif;
   }
   .contact-form .form-box .submit {
     margin-left: 100px;
     width: 150px;
     font-family: "DM Serif Text", serif;
+  }
+}
+.mission-statement {
+  width: 100%;
+  padding: 0 6%;
+  text-align: center;
+}
+.mission-statement .infoBox h2 {
+  font-family: "DM Serif Text", serif;
+}
+.mission-statement .infoBox p {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .mission-statement {
+    text-align: left;
+  }
+  .mission-statement .infoBox h2 {
+    font-size: 2.25em;
+  }
+  .mission-statement .infoBox p {
+    font-size: 1.15em;
   }
 }
 .hero-section {
@@ -1006,13 +1005,23 @@ footer {
 .hero-section h3 {
   font-family: "Montserrat", sans-serif;
 }
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(7, 23, 35, 0), #071723);
+  opacity: 0.6;
+}
 
 @media screen and (min-width: 768px) {
   .hero-section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
