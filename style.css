@@ -283,7 +283,7 @@ progress {
 }
 
 /**
- * Remove the default vertical scrollbar in IE 10+.
+ * Remove the default vertical scrollbar in IE 10+
  */
 textarea {
   overflow: auto;
@@ -621,6 +621,25 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  height: 60px;
+  width: 100%;
+  background-color: #071723;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.site-header .site-branding {
+  float: left;
+  width: 32px;
+  margin: 10px;
+}
+
 .main-navigation {
   display: block;
   width: 100%;
@@ -660,20 +679,72 @@ textarea {
 .main-navigation a {
   display: block;
   text-decoration: none;
+  padding: 0.3em 0;
+  margin: 5px 0;
+}
+.main-navigation li:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  border-bottom: 3px solid #D9ED92;
+}
+.main-navigation .menu-item a {
+  display: block;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+}
+.main-navigation .menu-item a:hover {
+  color: #D9ED92;
+  font-weight: 600;
+}
+.menu-item-gtranslate div {
+  position: relative !important;
 }
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block;
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  padding: 0.4em 0;
+  float: right;
+}
+.menu-toggle .burger-menu {
+  width: 32px;
+  margin: 10px;
 }
 
-@media screen and (min-width: 37.5em) {
+.main-navigation.toggled ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+  top: -10px;
+  background-color: #071723;
+  padding: 20px;
+  height: fit-content;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 
   .main-navigation ul {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 8px;
+  }
+  .main-navigation ul li {
+    margin: 0 20px;
+  }
+
+  .menu-item-gtranslate #gtranslate_wrapper {
+    position: absolute;
+    width: 173px;
+    height: 32px;
   }
 }
 .site-main .comment-navigation,
@@ -787,6 +858,7 @@ textarea {
     width: 200px;
     border-radius: 100px;
   }
+
 }
 /* Comments
 --------------------------------------------- */
