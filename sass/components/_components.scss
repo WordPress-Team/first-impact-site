@@ -1,13 +1,18 @@
 /* Navigation
 --------------------------------------------- */
 @import "navigation/navigation";
+@import "navigation/footer";
 
 /* Posts and pages
 --------------------------------------------- */
+
 @import "content/posts-and-pages";
 @import "content/contact-section";
-
-
+@import "content/mission-statement";
+@import "content/hero-section";
+@import "content/info-section";
+@import "content/resources";
+@import "content/dev-list";
 
 /* Comments
 --------------------------------------------- */
