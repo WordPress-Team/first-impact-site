@@ -632,7 +632,7 @@ html {
   background-color: #071723;
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 1;
 }
 .site-header .site-branding {
   float: left;
@@ -710,12 +710,13 @@ html {
   margin: 10px;
 }
 
-.main-navigation .toggled ul {
-  display: block;
+.main-navigation.toggled ul {
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
   position: relative;
   width: 100%;
+  top: -10px;
   background-color: #071723;
   padding: 20px;
   height: fit-content;
