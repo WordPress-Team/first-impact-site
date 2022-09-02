@@ -62,6 +62,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -283,7 +285,7 @@ progress {
 }
 
 /**
- * Remove the default vertical scrollbar in IE 10+
+ * Remove the default vertical scrollbar in IE 10+.
  */
 textarea {
   overflow: auto;
@@ -675,10 +677,6 @@ html {
 }
 .main-navigation li {
   position: relative;
-}
-.main-navigation a {
-  display: block;
-  text-decoration: none;
   padding: 0.3em 0;
   margin: 5px 0;
 }
@@ -701,6 +699,7 @@ html {
 .menu-item-gtranslate div {
   position: relative !important;
 }
+
 /* Small menu. */
 .menu-toggle {
   background-color: transparent;
@@ -858,7 +857,6 @@ html {
     width: 200px;
     border-radius: 100px;
   }
-
 }
 /* Comments
 --------------------------------------------- */
