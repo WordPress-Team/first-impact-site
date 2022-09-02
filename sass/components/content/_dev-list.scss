@@ -1,100 +1,76 @@
-// SITE COLORS
-$dark-blue: #071723;
-$light-blue: #184E77;
-$blue-green: #34A0A4;
-$yellow-green: #D9ED92;
-$white: #FFFFFF;
-
-// SITE TYPOGRAPHY
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-$dm-serif: 'DM Serif Text', serif;
-$montserrat: 'Montserrat', sans-serif;
-
 .dev-list {
-    background-color: #D9ED92;
-    margin: 5px 5px;
+  background-color: #d9ed92;
+  margin: 5rem 0 0 0;
 
-h2{
-    text-align: center; 
+  h2 {
+    text-align: center;
     font-family: $dm-serif;
-    margin-bottom: 50px;
-    padding-top: 20px;
-        
-        }
-    
+    padding: 4rem 0;
 
-.water-team{
+  }
+
+  .water-team {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-h3{
-    font-family: $dm-serif  
+    h3 {
+      font-family: $dm-serif;
     }
 
-p{
-    font-family: $montserrat;
+    p {
+      font-family: $montserrat;
+    }
+
+    .devs {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .dev-img {
+      height: 200px;
+      width: 200px;
+      border-radius: 100px;
+    }
+  }
 }
 
-.devs{
-    text-align: center;
-    margin-bottom: 50px;
-    }
-        
-.dev-img{
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
-            
-        }
+@media screen and (min-width: 768px) {
+  .dev-list {
+    // background-color: #D9ED92;
+    padding: 0 6%;
 
+    h2 {
+      text-align: left;
+      font-size: 2.25em;
+      font-family: $dm-serif;
+      
     }
 
-}
+    .water-team {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
 
-    @media screen and (min-width: 768px) {
-        .dev-list {
-            // background-color: #D9ED92;
-            margin: 5px, 5px;
-    
-        h2{
-            text-align: left;
-            font-size: 50px;
-            font-family: $dm-serif;
-            margin-bottom: 50px;
-            padding-top: 20px;
-          
-        }
-        
-        .water-team{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-        
-        h3{
-            font-family: $dm-serif
-        }
-    
-        p{
-            font-family: $montserrat; 
-        }
-    
-        .devs{
-            text-align: center;
-            margin-bottom: 50px;
-        }
-            
-        .dev-img{
+      h3 {
+        font-family: $dm-serif;
+      }
+
+      p {
+        font-family: $montserrat;
+      }
+
+      .devs {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .dev-img {
         height: 200px;
         width: 200px;
         border-radius: 100px;
-        }
-    
-        }
-    
+      }
     }
-    
+  }
 }
