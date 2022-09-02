@@ -11,6 +11,7 @@
     .title {
       font-family: $dm-serif;
       border-bottom: 2px solid $blue-green;
+      margin: 5rem 0 0 0;
     }
 
     .info-container {
@@ -20,11 +21,20 @@
           width: 100%;
           max-width: 500px;
           border-radius: 20px;
-          // margin: 20px 0 !important;
+          margin: 1.5rem 0 !important;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
               rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
         }
 
+        .right {
+          float:right;
+          margin: 0 0 0 1.5rem;
+        }
+
+        .left {
+          float: left;
+          margin: 0 1.5rem 0 0 !important;
+        }
         
     }
   }
@@ -54,6 +64,7 @@
 
     .info-container {
 
+
       .info-image {
         width: 500px;
       }
@@ -67,6 +78,7 @@
         float: left;
         margin: 0 1.5rem 0 0;
       }
+
 
       .item-right{
         order: -1;
