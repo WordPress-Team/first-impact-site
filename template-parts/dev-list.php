@@ -2,21 +2,21 @@
     <h2>Want To Meet The Team?</h2>
     <div class= "water-team">
         <div class="devs">
-            <img class="dev-img" src="http://firstimpactsite.local/wp-content/uploads/2022/09/Miles.png" alt="Miles's image">
-            <h3>Miles Angels</h3>
-            <p>WordPress Apprentice at Alphaworks</p>
+            <img class="dev-img" src="<?php the_field('developer_image_1'); ?>" alt="Miles's image">
+            <h3><?php the_field('developer_name_1'); ?></h3>
+            <p><?php the_field('work_1'); ?></p>
         </div>
 
         <div class="devs">
-            <img class="dev-img" src="http://firstimpactsite.local/wp-content/uploads/2022/09/George-scaled.jpg" alt="George's image">
-            <h3>George Meadors</h3>
-            <p>WordPress Apprentice at Alphaworks</p>
+            <img class="dev-img" src="<?php the_field('developer_image_2'); ?>" alt="Miles's image">
+            <h3><?php the_field('developer_name_2'); ?></h3>
+            <p><?php the_field('work_2'); ?></p>
         </div>
 
         <div class="devs">
-            <img class="dev-img" src="http://firstimpactsite.local/wp-content/uploads/2022/09/ruku.png" alt="Ruku's image">
-            <h3>Ruku Bhattarai</h3>
-            <p>WordPress Apprentice at Alphaworks</p>
+            <img class="dev-img" src="<?php the_field('developer_image_3'); ?>" alt="Miles's image">
+            <h3><?php the_field('developer_name_3'); ?></h3>
+            <p><?php the_field('work_3'); ?></p>
         </div>
 
     </div>

@@ -1,4 +1,4 @@
-<div class="hero-section" style="background-image: url('http://firstimpactsite.local/wp-content/uploads/2022/09/drinking-dirty-water.jpg');">
-    <h1>Water Scarcity</h1>
-    <h3>Slogan goes here</h3>
+<div class="hero-section" style="background-image: url('<?php the_field('hero_image'); ?>');">
+    <h1><?php the_field('title'); ?></h1>
+    <h3><?php the_field('slogan'); ?></h3>
 </div>
