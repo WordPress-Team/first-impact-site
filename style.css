@@ -898,7 +898,6 @@ footer {
   font-family: "DM Serif Text", serif;
   border-bottom: 2px solid #339fa3;
   margin: 5rem 0 0 0;
-
 }
 .info-section .intro .info-container .info-image {
   width: 100%;
@@ -907,13 +906,6 @@ footer {
   margin: 1.5rem 0 !important;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-
-.solutions {
-  width: 100%;
-  margin: 0 !important;
-  background-color: #339fa3;
-  padding: 5rem 0 !important;
-
 .info-section .intro .info-container .right {
   float: right;
   margin: 0 0 0 1.5rem;
@@ -921,7 +913,13 @@ footer {
 .info-section .intro .info-container .left {
   float: left;
   margin: 0 1.5rem 0 0 !important;
+}
 
+.solutions {
+  width: 100%;
+  margin: 0 !important;
+  background-color: #339fa3;
+  padding: 5rem 0 !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -945,9 +943,6 @@ footer {
   .info-section .info-container .left {
     float: left;
     margin: 0 1.5rem 0 0;
-  }
-  .info-section .info-container .info-image {
-    margin: 0;
   }
   .info-section .info-container .item-right {
     order: -1;
