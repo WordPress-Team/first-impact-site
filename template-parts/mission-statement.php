@@ -1,7 +1,6 @@
 <!-- This is the start of the mission statement -->
 
 <section class="mission-statement">
-    <div class="textBox"></div>
 
 <div class= "infoBox infoTextbox">
     <h2> Mission statement</h2>
