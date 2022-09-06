@@ -27,13 +27,13 @@
         </div>
 
         <div class="footerBox">
-                <div class="socialMedia">
-                        <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/github-1.png" alt=""></a>
-                        <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/email-1.png" alt=""></a>
-                        <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/impact-zone.png" alt=""></a>
-                </div>
-                <p>&copy; Impact Zone </p>
-                <p> Water Scarcity 2022</p>
+        <div class="socialMedia">
+                <a href="<?php the_field('social_media_url_1'); ?>"><img src="<?php the_field('social_media_icon_1'); ?>" alt="Impact Zone GitHub"></a>
+                <a href="<?php the_field('social_media_url_2'); ?>"><img src="<?php the_field('social_media_icon_2'); ?>" alt="Impact Zone Email"></a>
+                <a href="<?php the_field('social_media_url_3'); ?>"><img src="<?php the_field('social_media_icon_3'); ?>" alt="Impact Zone Website"></a>                                              
+            </div>
+            <p>&copy; Impact Zone </p>
+            <p>   Water Scarcity 2022</p>
         </div>
 
 

@@ -4,10 +4,15 @@
 <!-- Start of Water Scarcity info -->
     <article class="intro">
         <h2 class="title">
-            What is Water Scarcity?
+            <?php the_field('title_1'); ?>
         </h2>
         <div class="info-container">
-            <img class="info-image right" src="http://firstimpactsite.local/wp-content/uploads/2022/08/river-drying-up-scaled.jpg" alt="River drying up">
+            <div class="right">
+                <img class="info-image" src="<?php the_field('info_image_1'); ?>" alt="Low Water level at Grant Lake">
+                <figcaption>
+                    Photo by <a href="https://unsplash.com/@rs2photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ross Stone</a> on <a href="https://unsplash.com/s/photos/drought?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </figcaption>
+            </div>
             <p class="content item-right">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
