@@ -40,19 +40,20 @@ $montserrat: 'Montserrat', sans-serif;
             padding: 20px;
 
             .business{
-                font-size: 18px;
+                font-size: 20px;
                 font-family: $dm-serif;
                 margin: 20px 0px 0px;
             }
             .email{
-                font-size: 18px;
-                margin-top: 40px;
+                font-size: 20px;
+                // margin-top: 40px;
                 font-family: $dm-serif;
-                margin: 20px 0px 0px;
+                margin: 60px 0px 0px;
             }
             .time{
                 
                 margin: 0px 0px 24px 30px;
+                font-size: 18px;
                 
 
             }
@@ -131,7 +132,7 @@ $montserrat: 'Montserrat', sans-serif;
                 }
                 .email{
                     font-size: 20px;
-                    margin-top: 40px;
+                    
                 }
                 .time{
                     margin-left: 30px;
