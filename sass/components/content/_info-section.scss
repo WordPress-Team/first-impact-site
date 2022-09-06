@@ -1,9 +1,7 @@
 .info-section {
-  display: grid;
-  grid-template-rows: auto;
   width: 100%;
   padding: 0 6%;
-  grid-gap: 50px;
+  gap: 50px;
   font-family: $montserrat;
 
   .intro {
@@ -12,6 +10,8 @@
 
     .title {
       font-family: $dm-serif;
+      border-bottom: 2px solid $blue-green;
+      margin: 5rem 0 0 0;
     }
 
     .info-container {
@@ -19,19 +19,32 @@
 
         .info-image {
           width: 100%;
+          max-width: 500px;
           border-radius: 20px;
-          margin: 20px 0;
+          margin: 1.5rem 0 !important;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
               rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
         }
 
-        .content {
-            
+        .right {
+          float:right;
+          margin: 0 0 0 1.5rem;
         }
 
+        .left {
+          float: left;
+          margin: 0 1.5rem 0 0 !important;
+        }
         
     }
   }
+}
+
+.solutions {
+  width: 100%;
+  margin: 0 !important;
+  background-color: $blue-green;
+  padding: 5rem 0 !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -40,17 +53,32 @@
     .intro {
         text-align: left;
         margin: 0 auto;
+        padding: 0 0 3rem 0;
     }
 
     .title {
         text-align: left;
         font-size: 2.25em;
+        margin: 30px 0 40px;
     }
 
     .info-container {
-      display: grid;
-      gap: 30px;
-      grid-template-columns: auto auto;
+
+
+      .info-image {
+        width: 500px;
+      }
+
+      .right {
+        float:right;
+        margin: 0 0 0 1.5rem;
+      }
+
+      .left {
+        float: left;
+        margin: 0 1.5rem 0 0;
+      }
+
 
       .item-right{
         order: -1;

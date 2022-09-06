@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,24 +12,38 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'first-impact-site' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'first-impact-site' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'first-impact-site' ), 'first-impact-site', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer">
+        <div class="footerBox">
+                <?php
+                // wp_nav_menu(array(
+                //     'menu' => 'Nav Menu',
+                //     'theme_location' => 'footer-menu',
+                //     'menu_class' => 'footer-menu',
+                //     'menu_id' => 'footer-id'
+                // ))
+                ?>
+
+
+        </div>
+
+        <div class="footerBox">
+                <div class="socialMedia">
+                        <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/github-1.png" alt=""></a>
+                        <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/email-1.png" alt=""></a>
+                        <a href=""><img src="http://firstimpactsite.local/wp-content/uploads/2022/09/impact-zone.png" alt=""></a>
+                </div>
+                <p>&copy; Impact Zone </p>
+                <p> Water Scarcity 2022</p>
+        </div>
+
+
+
+
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
 
+<?php wp_footer();?>
 </body>
+
 </html>
