@@ -19,7 +19,7 @@
 
         .info-image {
           width: 100%;
-          max-width: 500px;
+          // max-width: 500px;
           border-radius: 20px;
           margin: 1.5rem 0;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
@@ -77,12 +77,12 @@
 
       .right {
         float:right;
-        margin: 0 0 0 1.5rem !important;
+        margin: 0 0 1.5rem 1.5rem !important;
       }
 
       .left {
         float: left;
-        margin: 0 1.5rem 0 0 !important;
+        margin: 0 1.5rem 1.5rem 0 !important;
       }
 
 

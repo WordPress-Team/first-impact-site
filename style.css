@@ -903,7 +903,6 @@ footer {
 }
 .info-section .intro .info-container .info-image {
   width: 100%;
-  max-width: 500px;
   border-radius: 20px;
   margin: 1.5rem 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -941,11 +940,11 @@ footer {
   }
   .info-section .info-container .right {
     float: right;
-    margin: 0 0 0 1.5rem !important;
+    margin: 0 0 1.5rem 1.5rem !important;
   }
   .info-section .info-container .left {
     float: left;
-    margin: 0 1.5rem 0 0 !important;
+    margin: 0 1.5rem 1.5rem 0 !important;
   }
   .info-section .info-container .item-right {
     order: -1;
@@ -957,6 +956,7 @@ footer {
 .resources {
   width: 100%;
   padding: 0 6%;
+  gap: 50px;
 }
 .resources .resource-title {
   text-align: center;
@@ -976,6 +976,7 @@ footer {
   width: 250px;
   height: 350px;
   background: linear-gradient(131.37deg, #FFFFFF 2.59%, #090b34 98.05%);
+  background-color: #090b34;
   color: #fff;
   padding: 10rem 0 0;
   max-width: 35ch;
@@ -985,7 +986,6 @@ footer {
 }
 .gallery .cards-border {
   width: 250px;
-  height: 350px;
   background: linear-gradient(131.37deg, #FFFFFF 2.59%, #090b34 98.05%);
   color: #fff;
   padding: 10rem 0 0;
@@ -1011,6 +1011,7 @@ footer {
 .gallery .card-content-solution .card-title {
   position: relative;
   width: max-content;
+  text-shadow: 0 0 2px #071723;
   font-family: "DM Serif Text", serif;
 }
 .gallery .card-content-solution .card-title::after {
@@ -1045,6 +1046,7 @@ footer {
 .gallery .card-content .card-title {
   position: relative;
   width: max-content;
+  text-shadow: 0 0 3px #071723;
   font-family: "DM Serif Text", serif;
 }
 .gallery .card-content .card-title::after {

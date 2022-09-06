@@ -1,7 +1,7 @@
 .resources {
     width: 100%;
     padding: 0 6%;
-
+    gap: 50px;
     .resource-title {
         text-align: center;
         font-family: $dm-serif;
@@ -21,6 +21,7 @@
       width: 250px;
       height: 350px;
       background: linear-gradient(131.37deg, #FFFFFF 2.59%, #090b34 98.05%);
+      background-color: #090b34;
       color: #fff;
       padding: 10rem 0 0;
       max-width: 35ch;
@@ -29,7 +30,7 @@
       object-position: 100% 0;
       &-border {
         width: 250px;
-      height: 350px;
+      // height: 350px;
       background: linear-gradient(131.37deg, #FFFFFF 2.59%, #090b34 98.05%);
       color: #fff;
       padding: 10rem 0 0;
@@ -51,7 +52,6 @@
           rgba(24, 78, 119, 1)
       );
       border-bottom: 5px solid $dark-blue;
-
       &-solution {
         border-radius: 0 0 10px 10px;
         padding: 1em;
@@ -64,6 +64,7 @@
         .card-title {
             position: relative;
             width: max-content;
+            text-shadow: 0 0 2px $dark-blue;
             font-family: $dm-serif;
         }
   
@@ -105,6 +106,7 @@
       .card-title {
           position: relative;
           width: max-content;
+          text-shadow: 0 0 3px $dark-blue;
           font-family: $dm-serif;
       }
 
