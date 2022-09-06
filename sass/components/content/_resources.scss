@@ -136,6 +136,7 @@
           &:hover {
             background-color: $white;
             color: $dark-blue;
+            transition: all 0.5s;
           }
       }
 

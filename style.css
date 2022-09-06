@@ -1069,6 +1069,7 @@ footer {
 .gallery .card-content .redirect-button:hover {
   background-color: #FFFFFF;
   color: #071723;
+  transition: all 0.5s;
 }
 .gallery .card-content a {
   text-decoration: none;
