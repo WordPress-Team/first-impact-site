@@ -12,18 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-	<div class="footerBox">
-    <?php
-            // wp_nav_menu(array(
-            //     'menu' => 'Nav Menu',
-            //     'theme_location' => 'footer-menu',
-            //     'menu_class' => 'footer-menu',
-            //     'menu_id' => 'footer-id'
-            // ))
-    ?>
 
-
-</div>
 
         <div class="footerBox">
         <div class="socialMedia">

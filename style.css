@@ -64,6 +64,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -623,7 +625,6 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
-
 html {
   margin: 0;
   padding: 0;
@@ -653,7 +654,6 @@ html {
   margin: 0;
   padding-left: 0;
 }
-
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -679,11 +679,6 @@ html {
 }
 .main-navigation li {
   position: relative;
-
-}
-.main-navigation a {
-  display: block;
-  text-decoration: none;
   padding: 0.3em 0;
   margin: 5px 0;
 }
@@ -705,8 +700,8 @@ html {
 }
 .menu-item-gtranslate div {
   position: relative !important;
-
 }
+
 /* Small menu. */
 .menu-toggle {
   background-color: transparent;
@@ -783,9 +778,7 @@ footer {
 
 .footerBox {
   font-family: "DM Serif Text", serif;
-  width: 30%;
   height: 200px;
-  float: left;
   margin: 20px;
   text-align: center;
   color: white;
@@ -1045,6 +1038,8 @@ footer {
   .resources .resource-title {
     text-align: left;
     font-size: 2.25em;
+  }
+}
 .dev-list {
   background-color: #D9ED92;
   margin: 5px 5px;
@@ -1107,7 +1102,6 @@ footer {
     height: 200px;
     width: 200px;
     border-radius: 100px;
-
   }
 }
 /* Comments
