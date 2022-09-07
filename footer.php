@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,24 +12,25 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'first-impact-site' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'first-impact-site' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'first-impact-site' ), 'first-impact-site', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer">
+        <div class="footerBox">
+        <div class="socialMedia">
+                <a href="<?php the_field('social_media_url_1'); ?>"><img src="<?php the_field('social_media_icon_1'); ?>" alt="Impact Zone GitHub"></a>
+                <a href="<?php the_field('social_media_url_2'); ?>"><img src="<?php the_field('social_media_icon_2'); ?>" alt="Impact Zone Email"></a>
+                <a href="<?php the_field('social_media_url_3'); ?>"><img src="<?php the_field('social_media_icon_3'); ?>" alt="Impact Zone Website"></a>                                              
+            </div>
+            <p>&copy; Impact Zone </p>
+            <p>   Water Scarcity 2022</p>
+        </div>
+
+
+
+
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
 
+<?php wp_footer();?>
 </body>
+
 </html>

@@ -1,7 +1,7 @@
 // SITE COLORS
 $dark-blue: #071723;
 $light-blue: #184E77;
-$blue-green: #34A0A4;
+$blue-green: #339fa3;
 $yellow-green: #D9ED92;
 $white: #FFFFFF;
 
@@ -25,7 +25,7 @@ html {
     background-color: $dark-blue;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 9999;
 	// padding: 10px;
 	.site-branding{
 		float: left;

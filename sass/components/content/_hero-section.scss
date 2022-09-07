@@ -1,0 +1,74 @@
+.hero-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-position: center !important;
+    justify-content: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 400px;
+    width: 100%;
+    top: -10px;
+
+    h1{
+        
+        font-family: $dm-serif;
+        padding: 100px 0 0 0;
+        margin: 0;
+        z-index: 1;
+    }
+    h3{
+        
+        font-family: $montserrat;
+        z-index: 1;
+    }
+
+    &::before {
+        content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(
+                rgba(7, 23, 35, 0),
+                rgba(7, 23, 35, 1)
+            );
+            opacity: .6; 
+      }
+}
+
+
+@media screen and (min-width: 768px){
+    .hero-section{
+        // background-image: url(http://firstimpactsite.local/wp-content/uploads/2022/08/drinking-dirty-water.jpg);
+        background-position: top center !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $white;
+        
+        // margin: 0px 50px;
+
+        h1{
+            font-size: 60px;
+            padding: 12% 0 0 0;
+            z-index: 1;
+        }
+        h3{
+            font-size: 30px;
+            z-index: 1;
+            // padding-top: 50px;
+        }
+        
+    }
+
+
+
+}

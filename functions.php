@@ -100,7 +100,7 @@ function first_impact_site_setup() {
 		)
 	);
 
-	add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
+	// add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
 }
 add_action( 'after_setup_theme', 'first_impact_site_setup' );
 
