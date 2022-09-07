@@ -839,6 +839,7 @@ footer {
 .contact-form .text-box h2 {
   text-align: center;
   font-family: "DM Serif Text", serif;
+  border-bottom: 2px solid #339fa3;
 }
 .contact-form .text-box p {
   font-family: "Montserrat", sans-serif;
@@ -876,6 +877,10 @@ footer {
   border: 1px solid #fff;
   width: fit-content;
 }
+.contact-form .form-box .wpcf7-submit:hover {
+  background-color: #FFFFFF;
+  color: #071723;
+}
 .contact-form .form-box label {
   color: white;
   font-family: "DM Serif Text", serif;
@@ -912,6 +917,14 @@ footer {
   padding-top: 40px;
   font-size: 18px;
 }
+.contact-form .wpcf7-not-valid-tip {
+  color: #D9ED92;
+}
+.contact-form .wpcf7-response-output {
+  color: #D9ED92;
+  border: 2px solid #FFFFFF !important;
+  font-weight: 600;
+}
 
 @media screen and (min-width: 768px) {
   .contact-form {
@@ -921,23 +934,25 @@ footer {
   .contact-form .text-box {
     height: 450px;
     width: 50%;
+    padding: 5em;
   }
   .contact-form .text-box h2 {
     text-align: center;
     font-size: 2.25em;
   }
-  .contact-form .text-box .hours {
-    margin-left: 40px;
-  }
   .contact-form .text-box .hours .business {
-    font-size: 1.35em;
+    font-size: 1.5em;
+    font-weight: 600;
   }
   .contact-form .text-box .hours .email {
-    font-size: 1.35em;
+    font-size: 1.5em;
     margin-top: 40px;
+    font-weight: 600;
   }
   .contact-form .text-box .hours .time {
-    margin-left: 30px;
+    font-size: 1.3em;
+    margin: 1em 0 0 3em;
+    font-weight: 500;
   }
   .contact-form .form-box {
     width: 50%;
