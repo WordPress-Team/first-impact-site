@@ -632,7 +632,7 @@ html {
   background-color: #071723;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 9999;
 }
 .site-header .site-branding {
   float: left;
@@ -961,6 +961,7 @@ footer {
 .resources .resource-title {
   text-align: center;
   font-family: "DM Serif Text", serif;
+  border-bottom: 2px solid #339fa3;
 }
 
 .gallery {

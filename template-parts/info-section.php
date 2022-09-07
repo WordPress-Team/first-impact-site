@@ -32,7 +32,7 @@
         <div class="left">
                 <img class="info-image" src="<?php the_field('info_image_2'); ?>" alt="Low Water level at Grant Lake">
                 <figcaption>
-                    Photo by <a href="https://unsplash.com/@rs2photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ross Stone</a> on <a href="https://unsplash.com/s/photos/drought?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    Photo by <a href="https://stock.adobe.com/contributor/207014963/rawiwan?load_type=author&prev_url=detail">Rawiwan</a> on <a href="https://stock.adobe.com/">Adobe Stock</a>
                 </figcaption>
             </div>
             <p class="content">
@@ -76,7 +76,7 @@
         <div class="left">
                 <img class="info-image" src="<?php the_field('info_image_4'); ?>" alt="Low Water level at Grant Lake">
                 <figcaption>
-                    Photo by <a href="https://unsplash.com/@rs2photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ross Stone</a> on <a href="https://unsplash.com/s/photos/drought?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    Photo by <a href="https://stock.adobe.com/contributor/204730444/malp?load_type=author&prev_url=detail">Malp</a> on <a href="https://stock.adobe.com/">Adobe Stock</a>
                 </figcaption>
             </div>
             <p class="content">
