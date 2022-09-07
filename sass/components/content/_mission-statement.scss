@@ -1,11 +1,15 @@
 .mission-statement {
     width: 100%;
+    display: flex;
     padding: 0 6%;
     margin: 3rem 0;
+    height: 30vh;
+    align-items: center;
     text-align: center;
     .infoBox {
         h2 {
             font-family: $dm-serif;
+            border-bottom: 2px solid $blue-green;
         }
 
         p {
@@ -23,7 +27,8 @@
             }
 
             p {
-                font-size: 1.15em;
+                font-size: 1.35em;
+                font-weight: 600;
             }
         }
     }

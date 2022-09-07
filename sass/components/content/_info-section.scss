@@ -27,6 +27,10 @@
 
         }
 
+        .content {
+          margin: 2em 0;
+        }
+
         .right {
           figcaption {
             text-align: center;
@@ -49,7 +53,7 @@
   width: 100%;
   margin: 0 !important;
   background-color: $blue-green;
-  padding: 5rem 0 !important;
+  padding: 5rem !important;
 }
 
 @media screen and (min-width: 768px) {

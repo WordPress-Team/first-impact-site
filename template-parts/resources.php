@@ -37,7 +37,7 @@
                     </a>
                 </div>
             </div>
-            <div class="cards" style="background-image:url('<?php the_field('organization_image_5'); ?>'); background-size: contain !important; background-repeat: no-repeat; background-position: 50% 20%;">
+            <!-- <div class="cards" style="background-image:url('<?php the_field('organization_image_5'); ?>'); background-size: contain !important; background-repeat: no-repeat; background-position: 50% 20%;">
                 <div class="card-content">
                     <h2 class="card-title"><?php the_field('organization_5'); ?></h2>
                     <p><?php the_field('description_5'); ?></p>
@@ -54,7 +54,7 @@
                         <button class="redirect-button">Learn More</button>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </section>
     </article>
 </section>

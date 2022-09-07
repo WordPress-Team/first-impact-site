@@ -13,12 +13,9 @@
                     Photo by <a href="https://unsplash.com/@rs2photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ross Stone</a> on <a href="https://unsplash.com/s/photos/drought?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                 </figcaption>
             </div>
-            <p class="content item-right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-            </p>
+            <div class="content item-right">
+                <?php the_field('info_content_1');?>
+            </div>
         </div>
     </article>
 <!-- End of Water Scarcity info -->
