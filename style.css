@@ -829,8 +829,18 @@ footer {
   margin: 0 0 1.5em;
 }
 
+
 .hero-section {
   position: relative;
+}
+.info-section .title {
+  font-family: "DM Serif Text", serif;
+}
+
+.resources {
+  color: white;
+}
+.resources .card {
   display: flex;
   flex-direction: column;
   align-items: center;
