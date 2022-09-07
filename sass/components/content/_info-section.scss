@@ -10,6 +10,7 @@
 
     .title {
       font-family: $dm-serif;
+      border-bottom: 2px solid $blue-green;
       margin: 5rem 0 0 0;
     }
 
@@ -17,25 +18,38 @@
         
 
         .info-image {
-          width: 500px;
+          width: 100%;
+          // max-width: 500px;
           border-radius: 20px;
-          margin: 1.5rem 0 !important;
+          margin: 1.5rem 0;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
               rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
         }
 
         .right {
-          float:right;
-          margin: 0 0 0 1.5rem;
+          figcaption {
+            text-align: center;
+            font-size: 0.75em;
+          }
         }
 
         .left {
-          float: left;
-          margin: 0 1.5rem 0 0 !important;
+          figcaption {
+            text-align: center;
+            font-size: 0.75em;
+          }
         }
         
     }
   }
+}
+
+.solutions {
+  width: 100%;
+  margin: 0 !important;
+  background-color: $blue-green;
+  padding: 5rem 0 !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -44,18 +58,34 @@
     .intro {
         text-align: left;
         margin: 0 auto;
+        padding: 0 0 3rem 0;
     }
 
     .title {
         text-align: left;
         font-size: 2.25em;
+        margin: 30px 0 40px;
     }
 
     .info-container {
 
-      .info-image{
-        margin: 0;
+
+      .info-image {
+        width: 500px !important;
+        margin: 0 !important;
       }
+
+      .right {
+        float:right;
+        margin: 0 0 1.5rem 1.5rem !important;
+      }
+
+      .left {
+        float: left;
+        margin: 0 1.5rem 1.5rem 0 !important;
+      }
+
+
       .item-right{
         order: -1;
       }

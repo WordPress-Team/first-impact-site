@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,20 +12,8 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-	<div class="footerBox">
-        <?php
-                // wp_nav_menu(array(
-                //     'menu' => 'Nav Menu',
-                //     'theme_location' => 'footer-menu',
-                //     'menu_class' => 'footer-menu',
-                //     'menu_id' => 'footer-id'
-                // ))
-        ?>
 
-
-        </div>
-
+<footer id="colophon" class="site-footer">
         <div class="footerBox">
         <div class="socialMedia">
                 <a href="<?php the_field('social_media_url_1'); ?>"><img src="<?php the_field('social_media_icon_1'); ?>" alt="Impact Zone GitHub"></a>
@@ -33,16 +22,14 @@
             </div>
             <p>&copy; Impact Zone </p>
             <p>   Water Scarcity 2022</p>
-        </div>
- 
-	
-
-		
-	</footer><!-- #colophon -->
+        </div>	
+</footer><!-- #colophon -->
 
 </div><!-- #page -->
 
 
+
 <?php wp_footer(); ?>
 </body>
+
 </html>

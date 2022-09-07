@@ -770,12 +770,12 @@ footer {
   width: 100%;
   height: 200px;
   background-color: #071723;
+  margin: 30px 0;
+  padding: 10px 0;
 }
 
 .footerBox {
   font-family: "DM Serif Text", serif;
-  width: 30%;
-  float: left;
   margin: 20px;
   text-align: center;
   color: #FFFFFF;
@@ -988,10 +988,10 @@ footer {
   flex-direction: column;
   align-items: center;
   color: white;
-  background-position: center;
+  background-position: center !important;
   justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   height: 400px;
   width: 100%;
   top: -10px;
@@ -1019,10 +1019,10 @@ footer {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-position: center center;
+    background-position: top center !important;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1051,34 +1051,53 @@ footer {
 }
 .info-section .intro .title {
   font-family: "DM Serif Text", serif;
+  border-bottom: 2px solid #339fa3;
   margin: 5rem 0 0 0;
 }
 .info-section .intro .info-container .info-image {
-  width: 500px;
+  width: 100%;
   border-radius: 20px;
-  margin: 1.5rem 0 !important;
+  margin: 1.5rem 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-.info-section .intro .info-container .right {
-  float: right;
-  margin: 0 0 0 1.5rem;
+.info-section .intro .info-container .right figcaption {
+  text-align: center;
+  font-size: 0.75em;
 }
-.info-section .intro .info-container .left {
-  float: left;
-  margin: 0 1.5rem 0 0 !important;
+.info-section .intro .info-container .left figcaption {
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.solutions {
+  width: 100%;
+  margin: 0 !important;
+  background-color: #339fa3;
+  padding: 5rem 0 !important;
 }
 
 @media screen and (min-width: 768px) {
   .info-section .intro {
     text-align: left;
     margin: 0 auto;
+    padding: 0 0 3rem 0;
   }
   .info-section .title {
     text-align: left;
     font-size: 2.25em;
+    margin: 30px 0 40px;
   }
   .info-section .info-container .info-image {
-    margin: 0;
+    width: 500px !important;
+    margin: 0 !important;
+  }
+  .info-section .info-container .right {
+    float: right;
+    margin: 0 0 1.5rem 1.5rem !important;
+  }
+  .info-section .info-container .left {
+    float: left;
+    margin: 0 1.5rem 1.5rem 0 !important;
   }
   .info-section .info-container .item-right {
     order: -1;
@@ -1090,10 +1109,12 @@ footer {
 .resources {
   width: 100%;
   padding: 0 6%;
+  gap: 50px;
 }
 .resources .resource-title {
   text-align: center;
   font-family: "DM Serif Text", serif;
+  border-bottom: 2px solid #339fa3;
 }
 
 .gallery {
@@ -1109,6 +1130,7 @@ footer {
   width: 250px;
   height: 350px;
   background: linear-gradient(131.37deg, #FFFFFF 2.59%, #090b34 98.05%);
+  background-color: #090b34;
   color: #fff;
   padding: 10rem 0 0;
   max-width: 35ch;
@@ -1116,15 +1138,69 @@ footer {
   background-size: cover !important;
   object-position: 100% 0;
 }
+.gallery .cards-border {
+  width: 250px;
+  background: linear-gradient(131.37deg, #FFFFFF 2.59%, #090b34 98.05%);
+  color: #fff;
+  padding: 10rem 0 0;
+  max-width: 35ch;
+  border-radius: 10px;
+  background-size: cover !important;
+  object-position: 100% 0;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+}
 .gallery .card-content {
   border-radius: 10px;
   padding: 1em;
   background: linear-gradient(rgba(24, 78, 119, 0), #184e77);
   border-bottom: 5px solid #071723;
 }
+.gallery .card-content-solution {
+  border-radius: 0 0 10px 10px;
+  padding: 1em;
+  background: linear-gradient(rgba(24, 78, 119, 0), #184e77);
+  border-bottom: 5px solid #FFFFFF;
+}
+.gallery .card-content-solution .card-title {
+  position: relative;
+  width: max-content;
+  text-shadow: 0 0 2px #071723;
+  font-family: "DM Serif Text", serif;
+}
+.gallery .card-content-solution .card-title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: calc(100% + 1rem);
+  left: -1rem;
+  bottom: 0;
+  background-color: #D9ED92;
+}
+.gallery .card-content-solution p {
+  font-family: "Montserrat", sans-serif;
+}
+.gallery .card-content-solution .redirect-button {
+  cursor: pointer;
+  width: fit-content;
+  background: #071723;
+  padding: 0.6em;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+  font-family: "DM Serif Text", serif;
+}
+.gallery .card-content-solution .redirect-button:hover {
+  background-color: #FFFFFF;
+  color: #071723;
+}
+.gallery .card-content-solution a {
+  text-decoration: none;
+}
 .gallery .card-content .card-title {
   position: relative;
   width: max-content;
+  text-shadow: 0 0 3px #071723;
   font-family: "DM Serif Text", serif;
 }
 .gallery .card-content .card-title::after {
@@ -1152,6 +1228,7 @@ footer {
 .gallery .card-content .redirect-button:hover {
   background-color: #FFFFFF;
   color: #071723;
+  transition: all 0.5s;
 }
 .gallery .card-content a {
   text-decoration: none;
