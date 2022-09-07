@@ -14,19 +14,6 @@
 
 <footer id="colophon" class="site-footer">
         <div class="footerBox">
-                <?php
-                // wp_nav_menu(array(
-                //     'menu' => 'Nav Menu',
-                //     'theme_location' => 'footer-menu',
-                //     'menu_class' => 'footer-menu',
-                //     'menu_id' => 'footer-id'
-                // ))
-                ?>
-
-
-        </div>
-
-        <div class="footerBox">
         <div class="socialMedia">
                 <a href="<?php the_field('social_media_url_1'); ?>"><img src="<?php the_field('social_media_icon_1'); ?>" alt="Impact Zone GitHub"></a>
                 <a href="<?php the_field('social_media_url_2'); ?>"><img src="<?php the_field('social_media_icon_2'); ?>" alt="Impact Zone Email"></a>
