@@ -1,0 +1,201 @@
+.contact-form{
+    // margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    
+    .text-box{
+        
+        // height: 450px;
+        margin: 0 auto;
+        
+
+        h2{
+            text-align: center;
+            padding-top: 30px;
+            font-family: $dm-serif;
+            font-size: 30px;
+        }
+
+        p{
+            font-family: $montserrat;
+        }
+        .hours{
+            // padding: 20px;
+
+            .business{
+                font-size: 18px;
+                font-family: $dm-serif;
+                margin: 20px 0px 0px;
+            }
+            .email{
+                font-size: 18px;
+                margin-top: 40px;
+                font-family: $dm-serif;
+                margin: 20px 0px 0px;
+            }
+            .time{
+                
+                margin: 0px 0px 24px 30px;
+                
+
+            }
+
+        }
+       
+    }
+    .form-box{
+        
+        // height: 500px;
+        background-image: linear-gradient(
+            rgba(7, 23, 35, 0.4),
+            rgba(7, 23, 35, 0.4)
+        ), url('http://firstimpactsite.local/wp-content/uploads/2022/09/half-dead-tree.jpg');
+        background-position: 60% center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 25px;
+
+        .wpcf7-submit {
+            display: flex;
+            color: white;
+            // margin-left: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: $dark-blue;
+            border-radius: 20px;
+            padding: 0.4em 0.6em;
+            font-size: 20px;
+            border: 1px solid #fff;
+            width: fit-content;
+            
+        }
+
+        label{
+            color: white;
+            font-family: $dm-serif;
+        }
+
+        input{
+            font-family: $dm-serif;
+            width: 100%;
+            
+         }
+    
+         input[type='text'], [type='email'], textarea {
+            background: none;
+            border: none;
+            border-bottom: solid 2px #fff;
+            font-family: $dm-serif;
+            color: $white;
+        }
+
+        textarea {
+            height: 100px;
+        }
+        
+        
+     }
+
+    select {
+        background: none;
+        border: none;
+        border-bottom: solid 2px #fff;
+        font-family: $dm-serif;
+        width: 100%;
+    }
+    .wpcf7-select{
+        // color: #F39C12;
+        color: $yellow-green;
+    }
+    .wpcf7-select:hover{
+        // color: #F39C12;
+        color: $yellow-green;
+        background-color: $dark-blue;
+    }
+
+    .wpcf7-email, .wpcf7-text, .wpcf7-textarea {
+        // background: none;
+        // border: none;
+        // border-bottom: solid 2px #fff;
+    }
+
+    .wpcf7-form {
+    
+    //    margin-left: 20px;
+       padding-top: 40px;
+       font-size: 18px;
+    }
+
+    
+    
+    
+}
+
+@media screen  and (min-width: 768px) {
+    .contact-form{
+        display: flex;
+        flex-direction: row;
+        
+        
+    
+
+        .text-box{
+            
+            height: 450px;
+            width: 50%;
+            
+    
+            h2{
+                
+                padding-top: 20px;
+                text-align: center;
+                margin-left: 30px;
+            }
+            .hours{
+                margin-left: 40px;
+    
+                .business{
+                    font-size: 20px;
+                }
+                .email{
+                    font-size: 20px;
+                    margin-top: 40px;
+                }
+                .time{
+                    margin-left: 30px;
+                }
+    
+            }
+           
+        }
+        .form-box{
+            
+            width: 50%;
+
+            label{
+                color: white;
+                
+            }
+
+            .wpcf7-form {
+                padding: 40px 20px;
+                // padding-top: 40px;
+                font-size: 18px;
+             }
+
+             
+            
+            
+            .submit{
+                
+                margin-left: 100px;
+                width: 150px;
+                font-family: $dm-serif;
+            }
+        }
+        
+    }
+    
+    
+}
+
