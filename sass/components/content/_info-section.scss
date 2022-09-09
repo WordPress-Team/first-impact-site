@@ -29,6 +29,19 @@
 
         .content {
           margin: 2em 0;
+          font-size: 1.25em;
+          ul {
+            margin: 0;
+            padding: 0;
+            text-align:justify;
+            
+          }
+          ul li {
+            margin: 0 0 0 1.5rem;
+            ul li {
+              margin: 0 0 0 1.5rem;
+            }
+          }
         }
 
         .right {
@@ -87,16 +100,23 @@
       .left {
         float: left;
         margin: 0 1.5rem 1.5rem 0 !important;
+        padding: 0 1.5rem 1.5rem 0;
       }
 
 
       .item-right{
         order: -1;
+        
       }
     }
 
     .content {
-      font-size: 1.15em;
+      font-size: 1.55em !important;
+      ul li {
+        ul li {
+          margin: 0 0 0 1.5rem;
+        }
+      }
     }
 
   }

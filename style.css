@@ -859,8 +859,8 @@ footer {
   margin: 0px 0px 24px 30px;
 }
 .contact-form .form-box {
-  background-image: linear-gradient(rgba(7, 23, 35, 0.4), rgba(7, 23, 35, 0.4)), url("http://firstimpactsite.local/wp-content/uploads/2022/09/half-dead-tree.jpg");
-  background-position: 60% center;
+  background-image: linear-gradient(rgba(7, 23, 35, 0.4), rgba(7, 23, 35, 0.4)), url("http://water-scarcity.local/wp-content/uploads/2022/09/AdobeStock_385435861-scaled.jpeg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 25px;
@@ -1079,6 +1079,18 @@ footer {
 }
 .info-section .intro .info-container .content {
   margin: 2em 0;
+  font-size: 1.25em;
+}
+.info-section .intro .info-container .content ul {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+.info-section .intro .info-container .content ul li {
+  margin: 0 0 0 1.5rem;
+}
+.info-section .intro .info-container .content ul li ul li {
+  margin: 0 0 0 1.5rem;
 }
 .info-section .intro .info-container .right figcaption {
   text-align: center;
@@ -1118,12 +1130,16 @@ footer {
   .info-section .info-container .left {
     float: left;
     margin: 0 1.5rem 1.5rem 0 !important;
+    padding: 0 1.5rem 1.5rem 0;
   }
   .info-section .info-container .item-right {
     order: -1;
   }
   .info-section .content {
-    font-size: 1.15em;
+    font-size: 1.55em !important;
+  }
+  .info-section .content ul li ul li {
+    margin: 0 0 0 1.5rem;
   }
 }
 .resources {
@@ -1147,7 +1163,6 @@ footer {
 }
 .gallery .cards {
   width: 250px;
-  height: 350px;
   background: linear-gradient(131.37deg, #FFFFFF 2.59%, #090b34 98.05%);
   background-color: #090b34;
   color: #fff;

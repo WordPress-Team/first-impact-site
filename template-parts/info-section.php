@@ -10,11 +10,17 @@
             <div class="right">
                 <img class="info-image" src="<?php the_field('info_image_1'); ?>" alt="Low Water level at Grant Lake">
                 <figcaption>
-                    Photo by <a href="https://unsplash.com/@rs2photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ross Stone</a> on <a href="https://unsplash.com/s/photos/drought?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    Photo by <a href="<?php the_field('info_image_1_url'); ?>">
+                                <?php the_field('artist_name_1'); ?>
+                            </a> 
+                                on 
+                            <a href="<?php the_field('image_site_name_1'); ?>">
+                                <?php the_field('image_site_name_1'); ?>
+                            </a>
                 </figcaption>
             </div>
             <div class="content item-right">
-                <?php the_field('info_content_1');?>
+                <?php the_field('text_content_1');?>
             </div>
         </div>
     </article>
@@ -23,21 +29,24 @@
 <!-- Start of Causes info -->
     <article class="intro">
         <h2 class="title">
-            Causes
+            <?php the_field('title_2'); ?>
         </h2>
         <div class="info-container">
-        <div class="left">
+            <div class="left">
                 <img class="info-image" src="<?php the_field('info_image_2'); ?>" alt="Low Water level at Grant Lake">
                 <figcaption>
-                    Photo by <a href="https://stock.adobe.com/contributor/207014963/rawiwan?load_type=author&prev_url=detail">Rawiwan</a> on <a href="https://stock.adobe.com/">Adobe Stock</a>
+                    Photo by <a href="<?php the_field('info_image_2_url'); ?>">
+                                <?php the_field('artist_name_2'); ?>
+                            </a> 
+                                on 
+                            <a href="<?php the_field('image_site_name_2'); ?>">
+                                <?php the_field('image_site_name_2'); ?>
+                            </a>
                 </figcaption>
             </div>
-            <p class="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-            </p>
+            <div class="content">
+                <?php the_field('text_content_2');?>
+            </div>
         </div>
     </article>
 <!-- End of Causes info -->
@@ -48,18 +57,21 @@
             <?php the_field('title_3'); ?>
         </h2>
         <div class="info-container">
-        <div class="right">
+            <div class="right">
                 <img class="info-image" src="<?php the_field('info_image_3'); ?>" alt="Low Water level at Grant Lake">
                 <figcaption>
-                    Photo by <a href="https://stock.adobe.com/contributor/207978737/ali-magsi?load_type=author&prev_url=detail">Ali Magsi</a> on <a href="https://stock.adobe.com/">Adobe Stock</a>
+                    Photo by <a href="<?php the_field('info_image_3_url'); ?>">
+                                <?php the_field('artist_name_3'); ?>
+                            </a> 
+                                on 
+                            <a href="<?php the_field('image_site_name_3'); ?>">
+                                <?php the_field('image_site_name_3'); ?>
+                            </a>
                 </figcaption>
             </div>
-            <p class="content item-right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-            </p>
+            <div class="content item-right">
+                <?php the_field('text_content_3');?>
+            </div>
         </div>
     </article>
 <!-- End of Causes info -->
@@ -67,21 +79,24 @@
 <!-- Start of Possible solutions info -->
     <article class="intro">
         <h2 class="title">
-            Possible Solutions
+            <?php the_field('title_4'); ?>
         </h2>
         <div class="info-container">
-        <div class="left">
+            <div class="left">
                 <img class="info-image" src="<?php the_field('info_image_4'); ?>" alt="Low Water level at Grant Lake">
                 <figcaption>
-                    Photo by <a href="https://stock.adobe.com/contributor/204730444/malp?load_type=author&prev_url=detail">Malp</a> on <a href="https://stock.adobe.com/">Adobe Stock</a>
+                    Photo by <a href="<?php the_field('info_image_4_url'); ?>">
+                                <?php the_field('artist_name_4'); ?>
+                            </a> 
+                                on 
+                            <a href="<?php the_field('image_site_name_4'); ?>">
+                                <?php the_field('image_site_name_4'); ?>
+                            </a>
                 </figcaption>
             </div>
-            <p class="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fuga rem totam labore, repudiandae doloremque quae dolore soluta quas tenetur eos odio corrupti ex sint officiis accusantium eius velit.
-            </p>
+            <div class="content">
+                <?php the_field('text_content_4');?>
+            </div>
         </div>
     </article>
 <!-- End of Possible solutions info -->

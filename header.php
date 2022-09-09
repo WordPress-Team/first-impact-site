@@ -34,7 +34,7 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-				<img class="burger-menu" src="http://firstimpactsite.local/wp-content/uploads/2022/08/menu.png" alt="burger-menu">
+				<img class="burger-menu" src="http://water-scarcity.local/wp-content/uploads/2022/09/menu.png" alt="burger-menu">
 			</button>
 			<?php
 			wp_nav_menu(
