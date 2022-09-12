@@ -62,11 +62,85 @@
   }
 }
 
-.solutions {
+.information {
   width: 100%;
-  margin: 0 !important;
-  background-color: $blue-green;
-  padding: 5rem !important;
+  height: auto;
+  padding: 40px 0;
+  background-image: linear-gradient(to bottom, #184e77, #036287, #007794, #128b9d, #339fa3);
+
+  .gallery {
+    display: grid;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    gap: 40px;
+    padding: 3em 0;
+
+    .info-cards {
+      width: 250px;
+      height: 250px;
+      padding: 30px 0;
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(14px);
+      text-align: center;
+      font-family: $dm-serif;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+              rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+      .icon {
+        display: flex;
+        width: 5em;
+        height: 5em;
+        padding: 0.5em;
+        margin: 0 auto;
+        background-color: $dark-blue;
+        border-radius: 100%;
+        border: 1px solid $dark-blue;
+
+        img {
+          object-fit: scale-down;
+          border-radius: 50%;
+        }
+      }
+
+      .site-name {
+        margin: 20px 0;
+        color: $dark-blue;
+      }
+      p {
+        margin-top: -20px !important;
+        color: $white;
+        font-size: 0.75em;
+      }
+      .learn-more {
+        cursor: pointer;
+        width: fit-content;
+      //   display: inline-block;
+        background: $dark-blue;
+        padding: 0.6em;
+        color: $white;
+        border: none;
+        border-radius:15px;
+        font-family: $dm-serif;
+
+        &:hover {
+          background-color: $white;
+          color: $dark-blue;
+          transition: all 0.5s;
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+      
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -113,6 +187,7 @@
     .content {
       font-size: 1.55em !important;
       ul li {
+        margin: 0 0 0 1.5rem;
         ul li {
           margin: 0 0 0 1.5rem;
         }
