@@ -632,6 +632,7 @@ html {
   background-color: #071723;
   position: sticky;
   top: 0;
+  margin: 0;
   z-index: 99999;
 }
 .site-header .site-branding {
@@ -1030,10 +1031,13 @@ footer {
   padding: 100px 0 0 0;
   margin: 0;
   z-index: 1;
+  text-shadow: 3px 3px #071723;
 }
 .hero-section h3 {
   font-family: "Montserrat", sans-serif;
   z-index: 1;
+  text-shadow: 3px 3px #071723;
+  margin: 0;
 }
 .hero-section::before {
   content: "";
@@ -1119,67 +1123,72 @@ footer {
   padding: 40px 0;
   background-image: linear-gradient(to bottom, #184e77, #036287, #007794, #128b9d, #339fa3);
 }
-.information .gallery {
+.information .gallery-info {
   display: grid;
   padding: 0;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   justify-content: center;
   list-style-type: none;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   gap: 40px;
   padding: 3em 0;
 }
-.information .gallery .info-cards {
-  width: 250px;
-  height: 250px;
+.information .gallery-info .info-cards {
+  width: 300px;
+  height: 300px;
   padding: 30px 0;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(14px);
   text-align: center;
   font-family: "DM Serif Text", serif;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-.information .gallery .info-cards .icon {
+.information .gallery-info .info-cards .icon {
   display: flex;
-  width: 5em;
-  height: 5em;
+  width: 6.5em;
+  height: 6.5em;
   padding: 0.5em;
   margin: 0 auto;
   background-color: #071723;
   border-radius: 100%;
   border: 1px solid #071723;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-.information .gallery .info-cards .icon img {
-  object-fit: scale-down;
-  border-radius: 50%;
+.information .gallery-info .info-cards .icon img {
+  object-fit: cover;
+  border-radius: 100%;
 }
-.information .gallery .info-cards .site-name {
+.information .gallery-info .info-cards .site-name {
   margin: 20px 0;
-  color: #071723;
+  color: #FFFFFF;
+  font-weight: 200;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  text-shadow: 2px 1px #071723;
 }
-.information .gallery .info-cards p {
+.information .gallery-info .info-cards p {
   margin-top: -20px !important;
   color: #FFFFFF;
   font-size: 0.75em;
 }
-.information .gallery .info-cards .learn-more {
+.information .gallery-info .info-cards .learn-more {
   cursor: pointer;
   width: fit-content;
-  background: #071723;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   padding: 0.6em;
-  color: #FFFFFF;
+  color: #071723;
   border: none;
   border-radius: 15px;
   font-family: "DM Serif Text", serif;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(14px);
 }
-.information .gallery .info-cards .learn-more:hover {
+.information .gallery-info .info-cards .learn-more:hover {
   background-color: #FFFFFF;
   color: #071723;
+  font-weight: 800;
   transition: all 0.5s;
 }
-.information .gallery .info-cards a {
+.information .gallery-info .info-cards a {
   text-decoration: none;
 }
 
@@ -1218,6 +1227,13 @@ footer {
   }
   .info-section .content ul li ul li {
     margin: 0 0 0 1.5rem;
+  }
+
+  .information .gallery-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .resources {
@@ -1298,6 +1314,12 @@ footer {
   .resources .resource-title {
     text-align: left;
     font-size: 2.25em;
+  }
+  .resources .gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .dev-list {

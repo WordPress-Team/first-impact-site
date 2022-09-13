@@ -105,13 +105,13 @@
 
 <!-- Start of Gallery for solutions -->
 <section class="information">
-  <ul class="gallery">
+  <ul class="gallery-info">
     <li class="info-cards">
         <span class="icon">
-            <img src="http://water-scarcity.local/wp-content/uploads/2022/09/006-water.png" alt="" >
+            <img src="<?php the_field('icon_1'); ?>" alt="" >
         </span> 
-      <h3 class="site-name">Groundwater Conservation</h3>
-      <a href="https://www.groundwater.org/action/home/top10.html" target="_blank">
+      <h3 class="site-name"><?php the_field('solution_name_1'); ?></h3>
+      <a href="<?php the_field('website_url_1'); ?>" target="_blank">
         <button class="learn-more">
           Learn More
         </button>
@@ -119,10 +119,10 @@
     </li>
     <li class="info-cards">
         <span class="icon">
-            <img src="http://water-scarcity.local/wp-content/uploads/2022/09/009-water-cycle.png" alt="" >
-        </span>
-      <h3 class="site-name">Recycling Wastewater</h3>
-      <a href="https://news.usc.edu/200268/california-drought-water-restrictions-wastewater/" target="_blank">
+            <img src="<?php the_field('icon_2'); ?>" alt="" >
+        </span> 
+      <h3 class="site-name"><?php the_field('solution_name_2'); ?></h3>
+      <a href="<?php the_field('website_url_2'); ?>" target="_blank">
         <button class="learn-more">
           Learn More
         </button>
@@ -130,10 +130,10 @@
     </li>
     <li class="info-cards">
         <span class="icon">
-            <img src="http://water-scarcity.local/wp-content/uploads/2022/09/008-hydro.png" alt="" >
-        </span>
-      <h3 class="site-name">Infrastructure</h3>
-      <a href="https://www.csis.org/analysis/creating-enabling-environment-sustainable-water-infrastructure-financing" target="_blank">
+            <img src="<?php the_field('icon_3'); ?>" alt="" >
+        </span> 
+      <h3 class="site-name"><?php the_field('solution_name_3'); ?></h3>
+      <a href="<?php the_field('website_url_3'); ?>" target="_blank">
         <button class="learn-more">
           Learn More
         </button>
@@ -141,11 +141,10 @@
     </li>
     <li class="info-cards">
         <span class="icon">
-            <img src="http://water-scarcity.local/wp-content/uploads/2022/09/007-rainwater.png" alt="" >
-        </span>
-      <h3 class="site-name">Collecting Rainwater</h3>
-      <p>Check local laws before proceeding</p>
-      <a href="https://www.watercache.com/education/rainwater-harvesting-101#:~:text=Rainwater%20harvesting%20is%20collecting%20the,some%20sort%20of%20storage%20vessel." target="_blank">
+            <img src="<?php the_field('icon_4'); ?>" alt="" >
+        </span> 
+      <h3 class="site-name"><?php the_field('solution_name_4'); ?></h3>
+      <a href="<?php the_field('website_url_4'); ?>" target="_blank">
         <button class="learn-more">
           Learn More
         </button>
@@ -153,10 +152,10 @@
     </li>
     <li class="info-cards">
         <span class="icon">
-            <img src="http://water-scarcity.local/wp-content/uploads/2022/09/005-sewage.png" alt="" >
-        </span>
-      <h3 class="site-name">Improving Sewage Systems</h3>
-      <a href="https://www.epa.gov/septic/septic-system-improvements-protect-nearby-water-sources" target="_blank">
+            <img src="<?php the_field('icon_5'); ?>" alt="" >
+        </span> 
+      <h3 class="site-name"><?php the_field('solution_name_5'); ?></h3>
+      <a href="<?php the_field('website_url_5'); ?>" target="_blank">
         <button class="learn-more">
           Learn More
         </button>
@@ -164,19 +163,10 @@
     </li>
     <li class="info-cards">
         <span class="icon">
-            <img src="http://water-scarcity.local/wp-content/uploads/2022/09/multiple-users-silhouette.png" alt="" >
-        </span>
-      <h3 class="site-name">Population Growth Control</h3>
-      <a href="https://populationmatters.org/news/2022/05/un-population-growth-driving-drought" target="_blank">
-        <button class="learn-more">
-          Learn More
-        </button>
-    </a>
-    </li>
-    <li class="info-cards">
-      <img src="http://water-scarcity.local/wp-content/uploads/2022/09/010-well.png" alt="" class="icon">
-      <h3 class="site-name">Replenish Aquifers</h3>
-      <a href="https://www.usgs.gov/mission-areas/water-resources/science/artificial-groundwater-recharge">
+            <img src="<?php the_field('icon_6'); ?>" alt="" >
+        </span> 
+      <h3 class="site-name"><?php the_field('solution_name_6'); ?></h3>
+      <a href="<?php the_field('website_url_6'); ?>" target="_blank">
         <button class="learn-more">
           Learn More
         </button>
@@ -184,10 +174,10 @@
     </li>
     <li class="info-cards">
         <span class="icon">
-            <img src="http://water-scarcity.local/wp-content/uploads/2022/09/003-reading.png" alt="" >
-        </span>
-      <h3 class="site-name">Education</h3>
-      <a href="https://www.watereducation.org/" target="_blank">
+            <img src="<?php the_field('icon_7'); ?>" alt="" >
+        </span> 
+      <h3 class="site-name"><?php the_field('solution_name_7'); ?></h3>
+      <a href="<?php the_field('website_url_7'); ?>" target="_blank">
         <button class="learn-more">
           Learn More
         </button>
@@ -195,10 +185,10 @@
     </li>
     <li class="info-cards">
         <span class="icon">
-            <img src="http://water-scarcity.local/wp-content/uploads/2022/09/001-waste.png" alt="" >
-        </span>
-      <h3 class="site-name">Address Pollution</h3>
-      <a href="https://www.epa.gov/sourcewaterprotection/how-can-you-help-protect-source-water">
+            <img src="<?php the_field('icon_8'); ?>" alt="" >
+        </span> 
+      <h3 class="site-name"><?php the_field('solution_name_8'); ?></h3>
+      <a href="<?php the_field('website_url_8'); ?>" target="_blank">
         <button class="learn-more">
           Learn More
         </button>
@@ -206,10 +196,21 @@
     </li>
     <li class="info-cards">
         <span class="icon">
-            <img src="http://water-scarcity.local/wp-content/uploads/2022/09/002-save-water.png" alt="" >
-        </span>
-      <h3 class="site-name">Reduce Consumption</h3>
-      <a href="https://www.watertechonline.com/water-reuse/article/15550499/5-strategies-to-lower-your-companys-water-footprint" target="_blank">
+            <img src="<?php the_field('icon_9'); ?>" alt="" >
+        </span> 
+      <h3 class="site-name"><?php the_field('solution_name_9'); ?></h3>
+      <a href="<?php the_field('website_url_9'); ?>" target="_blank">
+        <button class="learn-more">
+          Learn More
+        </button>
+    </a>
+    </li>
+    <li class="info-cards">
+        <span class="icon">
+            <img src="<?php the_field('icon_10'); ?>" alt="" >
+        </span> 
+      <h3 class="site-name"><?php the_field('solution_name_10'); ?></h3>
+      <a href="<?php the_field('website_url_10'); ?>" target="_blank">
         <button class="learn-more">
           Learn More
         </button>

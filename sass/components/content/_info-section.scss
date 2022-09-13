@@ -68,68 +68,80 @@
   padding: 40px 0;
   background-image: linear-gradient(to bottom, #184e77, #036287, #007794, #128b9d, #339fa3);
 
-  .gallery {
+  .gallery-info {
     display: grid;
     padding: 0;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     justify-content: center;
     list-style-type: none;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
     gap: 40px;
     padding: 3em 0;
 
     .info-cards {
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
       padding: 30px 0;
-      background-color: rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(14px);
+      // background-color: rgba(255, 255, 255, 0.3);
+      // backdrop-filter: blur(14px);
       text-align: center;
       font-family: $dm-serif;
       border-radius: 15px;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-              rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+      // box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+              // rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
       .icon {
         display: flex;
-        width: 5em;
-        height: 5em;
+        width: 6.5em;
+        height: 6.5em;
         padding: 0.5em;
         margin: 0 auto;
         background-color: $dark-blue;
         border-radius: 100%;
         border: 1px solid $dark-blue;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px,
+              rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
         img {
-          object-fit: scale-down;
-          border-radius: 50%;
+          object-fit: cover;
+          border-radius: 100%;
         }
       }
 
       .site-name {
         margin: 20px 0;
-        color: $dark-blue;
+        color: $white;
+        font-weight: 200;
+        font-size: 1.25em;
+        letter-spacing: 1px;
+        text-shadow: 2px 1px $dark-blue;
       }
+
       p {
         margin-top: -20px !important;
         color: $white;
         font-size: 0.75em;
       }
+
       .learn-more {
         cursor: pointer;
         width: fit-content;
       //   display: inline-block;
-        background: $dark-blue;
+        // background: $dark-blue;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+              rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
         padding: 0.6em;
-        color: $white;
+        color: $dark-blue;
         border: none;
         border-radius:15px;
         font-family: $dm-serif;
-
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(14px);
         &:hover {
           background-color: $white;
           color: $dark-blue;
+          font-weight: 800;
           transition: all 0.5s;
         }
 
@@ -195,4 +207,16 @@
     }
 
   }
+
+  .information {
+    .gallery-info {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  
 }
+

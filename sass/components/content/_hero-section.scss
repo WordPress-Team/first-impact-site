@@ -18,11 +18,14 @@
         padding: 100px 0 0 0;
         margin: 0;
         z-index: 1;
+        text-shadow: 3px 3px $dark-blue;
     }
     h3{
         
         font-family: $montserrat;
         z-index: 1;
+        text-shadow: 3px 3px $dark-blue;
+        margin:0;
     }
 
     &::before {

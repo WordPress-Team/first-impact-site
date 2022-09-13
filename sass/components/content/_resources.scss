@@ -95,5 +95,12 @@
             text-align: left;
             font-size: 2.25em;
         }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 }
