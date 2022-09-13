@@ -858,6 +858,7 @@ footer {
   text-align: center;
   font-family: "DM Serif Text", serif;
   border-bottom: 2px solid #339fa3;
+  margin: 0;
 }
 .contact-form .text-box p {
   font-family: "Montserrat", sans-serif;
@@ -877,7 +878,7 @@ footer {
   margin: 0px 0px 24px 30px;
 }
 .contact-form .form-box {
-  background-image: linear-gradient(rgba(7, 23, 35, 0.4), rgba(7, 23, 35, 0.4)), url("http://water-scarcity.local/wp-content/uploads/2022/09/AdobeStock_385435861-scaled.jpeg");
+  background-image: linear-gradient(rgba(7, 23, 35, 0.7), rgba(7, 23, 35, 0.7)), url("http://water-scarcity.local/wp-content/uploads/2022/09/AdobeStock_385435861-scaled.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -936,10 +937,10 @@ footer {
   font-size: 18px;
 }
 .contact-form .wpcf7-not-valid-tip {
-  color: #D9ED92;
+  color: #fcb900;
 }
 .contact-form .wpcf7-response-output {
-  color: #D9ED92;
+  color: #fcb900;
   border: 2px solid #FFFFFF !important;
   font-weight: 600;
 }
@@ -1184,7 +1185,7 @@ footer {
   border: none;
   border-radius: 15px;
   font-family: "DM Serif Text", serif;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(14px);
 }
 .information .gallery-info .info-cards .learn-more:hover {
@@ -1334,7 +1335,7 @@ footer {
 .dev-list h2 {
   text-align: center;
   font-family: "DM Serif Text", serif;
-  padding: 4rem 0 1rem;
+  padding: 4rem 0;
 }
 .dev-list .water-team {
   display: flex;
@@ -1343,6 +1344,7 @@ footer {
 }
 .dev-list .water-team h3 {
   font-family: "DM Serif Text", serif;
+  letter-spacing: 1px;
 }
 .dev-list .water-team p {
   font-family: "Montserrat", sans-serif;

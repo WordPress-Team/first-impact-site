@@ -5,7 +5,7 @@
   h2 {
     text-align: center;
     font-family: $dm-serif;
-    padding: 4rem 0 1rem;
+    padding: 4rem 0;
     // margin: 0 0 3rem;
     // border-bottom: 2px solid $blue-green;
   }
@@ -17,6 +17,7 @@
 
     h3 {
       font-family: $dm-serif;
+      letter-spacing: 1px;
     }
 
     p {

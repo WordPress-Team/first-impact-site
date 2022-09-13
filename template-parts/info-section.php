@@ -15,7 +15,7 @@
                             </a> 
                                 on 
                             <a href="<?php the_field('image_site_name_1'); ?>">
-                                <?php the_field('image_site_name_1'); ?>
+                                <?php the_field('image_site_1'); ?>
                             </a>
                 </figcaption>
             </div>
@@ -39,7 +39,7 @@
                                 <?php the_field('artist_name_2'); ?>
                             </a> 
                                 on 
-                            <a href="<?php the_field('image_site_name_2'); ?>">
+                            <a href="<?php the_field('image_site_2'); ?>">
                                 <?php the_field('image_site_name_2'); ?>
                             </a>
                 </figcaption>
@@ -64,7 +64,7 @@
                                 <?php the_field('artist_name_3'); ?>
                             </a> 
                                 on 
-                            <a href="<?php the_field('image_site_name_3'); ?>">
+                            <a href="<?php the_field('image_site_3'); ?>">
                                 <?php the_field('image_site_name_3'); ?>
                             </a>
                 </figcaption>
@@ -89,7 +89,7 @@
                                 <?php the_field('artist_name_4'); ?>
                             </a> 
                                 on 
-                            <a href="<?php the_field('image_site_name_4'); ?>">
+                            <a href="<?php the_field('image_site_4'); ?>">
                                 <?php the_field('image_site_name_4'); ?>
                             </a>
                 </figcaption>
