@@ -16,9 +16,9 @@
 <footer id="colophon" class="site-footer">
         <div class="footerBox">
                 <div class="socialMedia">
-                        <a href="<?php the_field('social_media_url_1'); ?>"><img src="<?php the_field('social_media_icon_1'); ?>" alt="Impact Zone GitHub"></a>
-                        <a href="<?php the_field('social_media_url_2'); ?>"><img src="<?php the_field('social_media_icon_2'); ?>" alt="Impact Zone Email"></a>
-                        <a href="<?php the_field('social_media_url_3'); ?>"><img src="<?php the_field('social_media_icon_3'); ?>" alt="Impact Zone Website"></a>                                              
+                        <a href="<?php the_field('social_media_url_1'); ?>"><img src="<?php the_field('social_media_icon_1'); ?>" alt="Impact Zone GitHub" target="_blank"></a>
+                        <a href="mailto:<?php the_field('social_media_url_2'); ?>"><img src="<?php the_field('social_media_icon_2'); ?>" alt="Impact Zone Email" target="_blank"></a>
+                        <a href="<?php the_field('social_media_url_3'); ?>"><img src="<?php the_field('social_media_icon_3'); ?>" alt="Impact Zone Website" target="_blank"></a>                                              
                 </div>
 
                 <p>&copy; Impact Zone </p>

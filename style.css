@@ -794,6 +794,11 @@ footer {
 
 .footerBox p {
   margin: 16px 0px 0px;
+  font-size: 1.05em;
+}
+
+.footerBox p:nth-of-type(2) {
+  margin: 0;
 }
 
 .socialMedia a img {
