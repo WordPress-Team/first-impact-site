@@ -10,12 +10,12 @@
             <div class="right">
                 <img class="info-image" src="<?php the_field('info_image_1'); ?>" alt="Low Water level at Grant Lake">
                 <figcaption>
-                    Photo by <a href="<?php the_field('info_image_1_url'); ?>">
+                    Photo by <a href="<?php the_field('info_image_1_url'); ?>" target="_blank">
                                 <?php the_field('artist_name_1'); ?>
                             </a> 
                                 on 
-                            <a href="<?php the_field('image_site_name_1'); ?>">
-                                <?php the_field('image_site_1'); ?>
+                            <a href="<?php the_field('image_site_1'); ?>" target="_blank">
+                                <?php the_field('image_site_name_1'); ?>
                             </a>
                 </figcaption>
             </div>
@@ -35,11 +35,11 @@
             <div class="left">
                 <img class="info-image" src="<?php the_field('info_image_2'); ?>" alt="Graphic of some causes of water scarcity">
                 <figcaption>
-                    Photo by <a href="<?php the_field('info_image_2_url'); ?>">
+                    Photo by <a href="<?php the_field('info_image_2_url'); ?>" target="_blank">
                                 <?php the_field('artist_name_2'); ?>
                             </a> 
                                 on 
-                            <a href="<?php the_field('image_site_2'); ?>">
+                            <a href="<?php the_field('image_site_2'); ?>" target="_blank">
                                 <?php the_field('image_site_name_2'); ?>
                             </a>
                 </figcaption>
@@ -60,11 +60,11 @@
             <div class="right">
                 <img class="info-image" src="<?php the_field('info_image_3'); ?>" alt="Boy drinking muddy water from small stream">
                 <figcaption>
-                    Photo by <a href="<?php the_field('info_image_3_url'); ?>">
+                    Photo by <a href="<?php the_field('info_image_3_url'); ?>" target="_blank">
                                 <?php the_field('artist_name_3'); ?>
                             </a> 
                                 on 
-                            <a href="<?php the_field('image_site_3'); ?>">
+                            <a href="<?php the_field('image_site_3'); ?>" target="_blank">
                                 <?php the_field('image_site_name_3'); ?>
                             </a>
                 </figcaption>
@@ -85,11 +85,11 @@
             <div class="left">
                 <img class="info-image" src="<?php the_field('info_image_4'); ?>" alt="Light-bulb-shaped lake in the middle of misty forest">
                 <figcaption>
-                    Photo by <a href="<?php the_field('info_image_4_url'); ?>">
+                    Photo by <a href="<?php the_field('info_image_4_url'); ?>" target="_blank">
                                 <?php the_field('artist_name_4'); ?>
                             </a> 
                                 on 
-                            <a href="<?php the_field('image_site_4'); ?>">
+                            <a href="<?php the_field('image_site_4'); ?>" target="_blank">
                                 <?php the_field('image_site_name_4'); ?>
                             </a>
                 </figcaption>
