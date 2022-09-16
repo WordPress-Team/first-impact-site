@@ -47,10 +47,7 @@
     .form-box{
         
         // height: 500px;
-        background-image: linear-gradient(
-            rgba(7, 23, 35, 0.7),
-            rgba(7, 23, 35, 0.7)
-        ), url('http://water-scarcity.local/wp-content/uploads/2022/09/AdobeStock_385435861-scaled.jpeg');
+        
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -82,13 +79,14 @@
         }
 
         input{
+            background: transparent;
             font-family: $dm-serif;
             width: 100%;
             
          }
     
          input[type='text'], [type='email'], textarea {
-            background: none;
+            background: transparent !important;
             border: none;
             border-bottom: solid 2px #fff;
             font-family: $dm-serif;
@@ -120,9 +118,9 @@
     }
 
     .wpcf7-email, .wpcf7-text, .wpcf7-textarea {
-        // background: none;
-        // border: none;
-        // border-bottom: solid 2px #fff;
+        background: transparent;
+        border: none;
+        border-bottom: solid 2px #fff;
     }
 
     .wpcf7-form {
@@ -153,15 +151,13 @@
         display: flex;
         flex-direction: row;
         
-        
-    
-
         .text-box{
             
             height: 450px;
             width: 50%;
-            padding: 5em;
-    
+            margin: 3em 5em;
+            //padding: 5em 0;
+            
             h2{
                 
                 //padding-top: 2rem;
@@ -185,6 +181,7 @@
                     font-size: 1.3em;
                     margin: 1em 0 0 3em;
                     font-weight: 500;
+                    
                 }
     
             }

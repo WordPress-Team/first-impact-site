@@ -33,7 +33,7 @@
         </h2>
         <div class="info-container">
             <div class="left">
-                <img class="info-image" src="<?php the_field('info_image_2'); ?>" alt="Graphic of some causes of water scarcity">
+                <img class="info-image" src="<?php the_field('info_image_2'); ?>" alt="Causes of water scarcity">
                 <figcaption>
                     Photo by <a href="<?php the_field('info_image_2_url'); ?>" target="_blank">
                                 <?php the_field('artist_name_2'); ?>
@@ -144,6 +144,7 @@
             <img src="<?php the_field('icon_4'); ?>" alt="Rainwater being collected in basin" >
         </span> 
       <h3 class="site-name"><?php the_field('solution_name_4'); ?></h3>
+      <p>Please consult your local laws before proceeding.</p>
       <a href="<?php the_field('website_url_4'); ?>" target="_blank">
         <button class="learn-more">
           Learn More

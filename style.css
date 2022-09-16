@@ -878,7 +878,6 @@ footer {
   margin: 0px 0px 24px 30px;
 }
 .contact-form .form-box {
-  background-image: linear-gradient(rgba(7, 23, 35, 0.7), rgba(7, 23, 35, 0.7)), url("http://water-scarcity.local/wp-content/uploads/2022/09/AdobeStock_385435861-scaled.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -905,11 +904,12 @@ footer {
   font-family: "DM Serif Text", serif;
 }
 .contact-form .form-box input {
+  background: transparent;
   font-family: "DM Serif Text", serif;
   width: 100%;
 }
 .contact-form .form-box input[type=text], .contact-form .form-box [type=email], .contact-form .form-box textarea {
-  background: none;
+  background: transparent !important;
   border: none;
   border-bottom: solid 2px #fff;
   font-family: "DM Serif Text", serif;
@@ -932,6 +932,11 @@ footer {
   color: #D9ED92;
   background-color: #071723;
 }
+.contact-form .wpcf7-email, .contact-form .wpcf7-text, .contact-form .wpcf7-textarea {
+  background: transparent;
+  border: none;
+  border-bottom: solid 2px #fff;
+}
 .contact-form .wpcf7-form {
   padding-top: 40px;
   font-size: 18px;
@@ -953,7 +958,7 @@ footer {
   .contact-form .text-box {
     height: 450px;
     width: 50%;
-    padding: 5em;
+    margin: 3em 5em;
   }
   .contact-form .text-box h2 {
     text-align: center;
