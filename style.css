@@ -851,7 +851,7 @@ footer {
   flex-direction: column;
 }
 .contact-form .text-box {
-  margin: 0 auto;
+  margin: 0 2rem;
   padding: 3rem 0;
 }
 .contact-form .text-box h2 {
@@ -875,7 +875,8 @@ footer {
   margin: 20px 0px 0px;
 }
 .contact-form .text-box .hours .time {
-  margin: 0px 0px 24px 30px;
+  text-align: center;
+  font-size: 0.9rem;
 }
 .contact-form .form-box {
   background-position: center;
@@ -976,6 +977,7 @@ footer {
   .contact-form .text-box .hours .time {
     font-size: 1.3em;
     margin: 1em 0 0 3em;
+    text-align: left;
     font-weight: 500;
   }
   .contact-form .form-box {
